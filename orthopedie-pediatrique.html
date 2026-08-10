@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="index, follow">
+<title>Orthopédie pédiatrique — Dr. Ziane Khodja | Ouled Moussa, Boumerdès</title>
+<meta name="description" content="Prise en charge des fractures, déformations et traumatismes osseux chez l'enfant par le Dr Ziane Khodja à Ouled Moussa, Boumerdès.">
+<link rel="canonical" href="https://drzianekhodja.vercel.app/orthopedie-pediatrique.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://drzianekhodja.vercel.app/orthopedie-pediatrique.html">
+<meta property="og:title" content="Orthopédie pédiatrique — Dr. Ziane Khodja">
+<meta property="og:description" content="Fractures, déformations, traumatismes osseux chez l'enfant. Consultation à Ouled Moussa, Boumerdès.">
+<meta property="og:image" content="https://drzianekhodja.vercel.app/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=Tajawal:wght@400;500;700&family=Markazi+Text:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#0077B6;
+  --primary-dark:#005a8c;
+  --primary-light:#E6F4F1;
+  --accent:#00B4D8;
+  --accent-warm:#FF6B6B;
+  --bg:#F8FAFC;
+  --bg-white:#FFFFFF;
+  --ink:#0F172A;
+  --ink-soft:#475569;
+  --ink-muted:#94A3B8;
+  --line:#E2E8F0;
+  --radius:16px;
+  --radius-lg:24px;
+  --maxw:1140px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,0.04);
+  --shadow:0 4px 20px rgba(0,119,182,0.08);
+  --shadow-lg:0 12px 40px rgba(0,119,182,0.12);
+  --shadow-card:0 8px 30px rgba(15,23,42,0.06);
+}
+*{box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Work Sans',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+[dir="rtl"] body,body.lang-ar{font-family:'Tajawal',sans-serif;}
+.ar{display:none;}.fr{display:block;}
+body.lang-ar .ar{display:block;}body.lang-ar .fr{display:none;}
+span.ar,a.ar,button.ar{display:none;}
+body.lang-ar span.ar,body.lang-ar a.ar,body.lang-ar button.ar{display:inline-block;}
+body.lang-ar span.fr,body.lang-ar a.fr,body.lang-ar button.fr{display:none;}
+h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);margin:0 0 .4em 0;letter-spacing:-0.02em;}
+body.lang-ar h1,body.lang-ar h2,body.lang-ar h3,body.lang-ar h4{font-family:'Markazi Text',serif;font-weight:700;}
+p{color:var(--ink-soft);margin:0 0 1em 0;}a{color:var(--primary);text-decoration:none;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+img{max-width:100%;display:block;border-radius:var(--radius);}
+
+/* ===== HEADER ===== */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--line);transition:box-shadow .3s ease;}
+header.scrolled{box-shadow:0 4px 20px rgba(0,0,0,0.06);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--maxw);margin:0 auto;}
+.brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:12px;line-height:1.1;}
+body.lang-ar .brand{font-family:'Markazi Text',serif;font-size:1.4rem;}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--primary);}
+.brand-text{display:flex;flex-direction:column;}
+.brand small{font-family:'Work Sans',sans-serif;font-weight:600;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);}
+body.lang-ar .brand small{font-family:'Tajawal',sans-serif;text-transform:none;letter-spacing:0;font-size:.72rem;}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-links a{font-size:.88rem;font-weight:500;color:var(--ink-soft);transition:color .2s;}
+.nav-links a:hover{color:var(--primary);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
+.lang-toggle{border:1.5px solid var(--line);background:var(--bg-white);color:var(--ink);border-radius:999px;padding:7px 16px;font-size:.8rem;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s;}
+.lang-toggle:hover{border-color:var(--primary);color:var(--primary);}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;padding:10px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.88rem;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;transition:all .2s;box-shadow:0 4px 14px rgba(0,119,182,0.25);}
+.btn:hover{background:var(--primary-dark);transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,119,182,0.35);}
+.btn-pink{background:var(--accent-warm);box-shadow:0 4px 14px rgba(255,107,107,0.25);}
+.btn-pink:hover{background:#e55a5a;box-shadow:0 6px 20px rgba(255,107,107,0.35);}
+.btn-outline{background:transparent;color:var(--primary);border:1.5px solid var(--primary);box-shadow:none;}
+.btn-outline:hover{background:var(--primary);color:#fff;}
+.btn-white{background:#fff;color:var(--primary);box-shadow:0 4px 14px rgba(0,0,0,0.1);}
+.btn-white:hover{background:var(--primary-light);}
+.btn-lg{padding:14px 32px;font-size:1rem;}
+
+/* ===== ARTICLE PAGE ===== */
+.article-hero{position:relative;padding:120px 0 40px;background:linear-gradient(135deg, #E6F4F1 0%, #F0F9FF 50%, #F8FAFC 100%);overflow:hidden;}
+.article-hero::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle, rgba(0,180,216,0.08) 0%, transparent 70%);border-radius:50%;}
+.article-hero::after{content:'';position:absolute;bottom:-80px;left:-80px;width:300px;height:300px;background:radial-gradient(circle, rgba(0,119,182,0.06) 0%, transparent 70%);border-radius:50%;}
+.article-meta{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;}
+.cat-badge{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.02em;}
+.cat-pathologie{background:#EFF6FF;color:#2563EB;}
+.article-hero h1{font-size:clamp(2rem,4.5vw,3rem);line-height:1.1;margin-bottom:.3em;}
+.article-hero .lead{font-size:1.1rem;max-width:60ch;color:var(--ink-soft);line-height:1.7;}
+.article-body{background:var(--bg-white);border-radius:var(--radius-lg);padding:48px 56px;margin:-20px auto 0;max-width:860px;position:relative;z-index:10;box-shadow:var(--shadow-card);border:1px solid var(--line);}
+@media(max-width:768px){.article-body{padding:32px 24px;}}
+.article-body h2{font-size:1.5rem;margin:2em 0 .6em;padding-top:1.5em;border-top:1px solid var(--line);}
+.article-body h2:first-of-type{margin-top:0;padding-top:0;border-top:none;}
+.article-body h3{font-size:1.15rem;margin:1.4em 0 .5em;color:var(--ink-soft);}
+.article-body p{font-size:1rem;line-height:1.8;margin-bottom:1.2em;}
+.article-body ul, .article-body ol{margin:0 0 1.4em 0;padding-left:1.5em;}
+body.lang-ar .article-body ul, body.lang-ar .article-body ol{padding-left:0;padding-right:1.5em;}
+.article-body li{margin-bottom:.6em;color:var(--ink-soft);line-height:1.7;}
+.article-body strong{color:var(--ink);}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0;background:var(--bg);border-radius:var(--radius);padding:24px;border:1px solid var(--line);}
+@media(min-width:600px){.stats-grid{grid-template-columns:repeat(3,1fr);}}
+.stat-item{text-align:center;}
+.stat-item .num{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:700;color:var(--primary);}
+body.lang-ar .stat-item .num{font-family:'Markazi Text',serif;}
+.stat-item .lbl{font-size:.78rem;color:var(--ink-muted);margin-top:4px;}
+.cta-box{background:linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);border-radius:var(--radius);padding:32px 36px;color:#fff;margin:40px 0;text-align:center;}
+.cta-box h3{color:#fff;font-size:1.4rem;margin-bottom:.4em;}
+.cta-box p{color:rgba(255,255,255,0.85);margin-bottom:20px;}
+.cta-box .btn-white{color:var(--primary);}
+
+/* ===== FOOTER ===== */
+footer{padding:32px 0;text-align:center;background:var(--ink);}
+footer p{font-size:.82rem;margin:0;color:var(--ink-muted);}
+
+/* ===== REVEAL ===== */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:none;}
+
+/* ===== FAQ ===== */
+.faq-section{padding:40px 0 60px;}
+.faq-item{background:var(--bg-white);border-radius:var(--radius);border:1px solid var(--line);margin-bottom:14px;overflow:hidden;box-shadow:var(--shadow-sm);}
+.faq-btn{width:100%;text-align:left;padding:18px 22px;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:inherit;font-size:.95rem;font-weight:600;color:var(--ink);gap:12px;transition:background .2s;}
+.faq-btn:hover{background:var(--primary-light);}
+.faq-chevron{transition:transform .3s ease;color:var(--primary);font-size:.85rem;}
+.faq-btn.active .faq-chevron{transform:rotate(180deg);}
+.faq-content{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease;padding:0 22px;color:var(--ink-soft);line-height:1.7;}
+.faq-content p{padding-bottom:18px;margin:0;font-size:.95rem;}
+.faq-content strong{color:var(--ink);}
+.faq-icon{font-size:1.3rem;line-height:1;display:inline-flex;align-items:center;justify-content:center;width:auto;height:auto;flex-shrink:0;}
+body.lang-ar .faq-btn{font-family:'Tajawal',sans-serif;font-size:1rem;}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;}}
+
+/* ===== SCROLL HEADER ===== */
+header{transition:padding .3s ease;}
+header.scrolled .nav{padding:10px 24px;}
+</style>
+</head>
+<body class="lang-fr">
+
+<header id="main-header">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img src="1000040675.jpg" alt="Dr Ziane Khodja">
+      <div class="brand-text">
+        <span>Dr. Ziane Khodja</span>
+        <small class="fr">Chirurgienne pédiatre</small>
+        <small class="ar">جراحة الأطفال</small>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#services" class="fr">Actes</a><a href="index.html#services" class="ar">الأعمال</a>
+      <a href="index.html#docteur" class="fr">Le Docteur</a><a href="index.html#docteur" class="ar">الطبيبة</a>
+      <a href="index.html#galerie" class="fr">Galerie</a><a href="index.html#galerie" class="ar">معرض الصور</a>
+      <a href="index.html#avis" class="fr">Avis</a><a href="index.html#avis" class="ar">التقييمات</a>
+      <a href="index.html#contact" class="fr">Contact</a><a href="index.html#contact" class="ar">اتصال</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" onclick="toggleLang()">
+        <span class="fr">العربية</span>
+        <span class="ar">Français</span>
+      </button>
+      <a class="btn" href="tel:+213558456019">
+        <span class="fr">Appeler</span><span class="ar">اتصل بنا</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
+    <div class="wrap">
+      <div class="article-meta">
+        <span class="cat-badge cat-pathologie">Pathologie</span>
+        <span style="color:var(--ink-muted);font-size:.85rem;">Dr. Ziane Khodja — Ouled Moussa, Boumerdès</span>
+      </div>
+      <h1 class="fr">Orthopédie pédiatrique</h1>
+      <h1 class="ar">تقويم العظام للأطفال</h1>
+      <p class="lead fr">Tout ce que les parents doivent savoir sur la prise en charge orthopédique de l'enfant : fractures, déformations, traumatismes osseux et maladies du squelette en croissance.</p>
+      <p class="lead ar">كل ما يجب على الأولياء معرفته عن التكفل بتقويم العظام للأطفال: الكسور، التشوهات، الرضوض العظمية وأمراض الهيكل العظمي النامي.</p>
+    </div>
+    <!-- IMAGE ILLUSTRATION -->
+  <section class="reveal">
+    <div class="wrap">
+      <img src="images\specialites\ortopedie.jpg" alt="Enfant ayant reçu un plâtre au niveau de la jambe, la chirurgienne pédiatre venant de terminer la pose" loading="lazy" style="max-width:1000px;width:100%;margin:0 auto;">
+    </div>
+  </section>
+
+
+    
+  </section>
+
+  <!-- ARTICLE BODY -->
+  <div class="wrap">
+    <article class="article-body reveal">
+
+      <h2 class="fr">Qu'est-ce que l'orthopédie pédiatrique ?</h2>
+      <h2 class="ar">ما هو تقويم العظام للأطفال؟</h2>
+      <p class="fr">L'orthopédie pédiatrique est la branche de la chirurgie qui traite des affections du système musculo-squelettique chez l'enfant, du nourrisson à l'adolescent. Contrairement à l'adulte, l'enfant possède un squelette en croissance avec des cartilages de conjugaison (physe) qui nécessitent une prise en charge spécifique pour ne pas perturber sa croissance future.</p>
+      <p class="ar">تقويم العظام للأطفال هو فرع الجراحة الذي يعالج أمراض الجهاز العضلي الهيكلي عند الطفل، من الرضيع إلى المراهق. على عكس البالغ، يملك الطفل هيكلاً عظمياً نامياً مع غضاريف النمو (الفيز) التي تتطلب تكفلاً خاصاً حتى لا تُعطل نموه المستقبلي.</p>
+
+      <h2 class="fr">Pathologies les plus fréquentes</h2>
+      <h2 class="ar">أكثر الأمراض شيوعاً</h2>
+
+      <h3 class="fr">Fractures et traumatismes osseux</h3>
+      <h3 class="ar">الكسور والرضوض العظمية</h3>
+      <p class="fr">Les fractures chez l'enfant diffèrent de celles de l'adulte par leur localisation (souvent au niveau des métaphyses), leur capacité de remodelage (correction spontanée progressive) et leur risque de lésion des cartilages de croissance. Les fractures les plus courantes concernent le poignet, le coude, la clavicule et la jambe.</p>
+      <p class="ar">تختلف كسور الأطفال عن كسور البالغين في موقعها (غالباً عند الميتافيز)، وقدرتها على إعادة التشكيل (تصحيح تلقائي تدريجي)، ومخاطر إصابة غضاريف النمو. أكثر الكسور شيوعاً تخص المعصم، والكوع، والترقوة، والساق.</p>
+
+      <ul class="fr">
+        <li><strong>Fracture de la clavicule</strong> : la plus fréquente chez le nouveau-né (traumatisme obstétrical) et l'enfant</li>
+        <li><strong>Fracture supracondylienne du coude</strong> : urgence orthopédique nécessitant une réduction précise</li>
+        <li><strong>Fracture du poignet (radius)</strong> : très courante chez l'adolescent actif</li>
+        <li><strong>Fracture de la jambe (tibia)</strong> : souvent liée aux accidents de sport ou de la route</li>
+      </ul>
+      <ul class="ar">
+        <li><strong>كسر الترقوة:</strong> الأكثر شيوعاً عند المولود الجديد (رضض ولادي) والطفل</li>
+        <li><strong>كسر ما فوق الكondyle للكوع:</strong> حالة طارئة تقويمية تتطلب إعادة ضبط دقيقة</li>
+        <li><strong>كسر المعصم (الكعبرة):</strong> شائع جداً عند المراهق النشيط</li>
+        <li><strong>كسر الساق (الظنبوب):</strong> مرتبط غالباً بحوادث الرياضة أو الطريق</li>
+      </ul>
+
+      <h3 class="fr">Déformations congénitales du pied</h3>
+      <h3 class="ar">التشوهات الخلقية للقدم</h3>
+      <p class="fr">Le pied bot varus équin (PBVE) est la déformation congénitale la plus fréquente du pied, touchant environ 1 à 2 naissances sur 1 000. Il se caractérise par un pied tourné vers l'intérieur et pointé vers le bas. La méthode de Ponseti (séries de plâtres progressifs suivis d'une tenotomie du tendon d'Achille) est le traitement de référence avec un taux de succès supérieur à 95 %.</p>
+      <p class="ar">القدم الحنفاء المقلوبة (PBVE) هي التشوه الخلقي الأكثر شيوعاً للقدم، تصيب حوالي 1 إلى 2 ولادة من كل 1000. تتميز بقدم تدور للداخل وتتجه للأسفل. طريقة بونسيتي (سلسلة من الجبائر التدريجية تليها قطع وتر العرقوب) هي العلاج المرجعي بنسبة نجاح تتجاوز 95%.</p>
+
+      <h3 class="fr">Dysplasie de la hanche</h3>
+      <h3 class="ar">خلل تنسج الورك</h3>
+      <p class="fr">La dysplasie de développement de la hanche (DDH) correspond à une instabilité ou une luxation de la hanche chez le nourrisson. Le dépistage précoce (examen clinique de Barlow et Ortolani, échographie à 6 semaines) est essentiel. Le traitement dépend de l'âge : attelle de Pavlik pour le nourrisson, plâtre ou chirurgie si diagnostic tardif.</p>
+      <p class="ar">خلل تنسج الورك (DDH) هو عدم استقرار أو خلع الورك عند الرضيع. الكشف المبكر (الفحص السريري لبارلو وأورتولاني، الموجات فوق الصوتية عند 6 أسابيع) ضروري. يعتمد العلاج على السن: مشد بافليك للرضيع، جبيرة أو جراحة إذا تأخر التشخيص.</p>
+
+      <h3 class="fr">Scoliose</h3>
+      <h3 class="ar">الجنف</h3>
+      <p class="fr">La scoliose est une déformation latérale de la colonne vertébrale. La scoliose idiopathique de l'adolescent est la plus fréquente (80 % des cas). Le suivi régulier par radiographie et l'examen clinique permettent de décider du traitement : rééducation, corset ou chirurgie de correction selon l'angle de Cobb.</p>
+      <p class="ar">الجنف هو تشوّه جانبي للعمود الفقري. جنف المراهق مجهول السبب هو الأكثر شيوعاً (80% من الحالات). المتابعة الدورية بالأشعة والفحص السريري تسمح بتحديد العلاج: إعادة التأهيل، أو مشد، أو جراحة تصحيح حسب زاوية كوب.</p>
+
+      <h2 class="fr">📊 Statistiques et données clés</h2>
+      <h2 class="ar">📊 الإحصائيات والبيانات الرئيسية</h2>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="num">30-40%</div>
+          <div class="lbl fr">Des enfants subissent une fracture avant 18 ans</div>
+          <div class="lbl ar">من الأطفال يتعرضون لكسر قبل 18 سنة</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">1-2‰</div>
+          <div class="lbl fr">Prévalence du pied bot (PBVE)</div>
+          <div class="lbl ar">انتشار القدم الحنفاء</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">1-3%</div>
+          <div class="lbl fr">Prévalence de la dysplasie de hanche</div>
+          <div class="lbl ar">انتشار خلل تنسج الورك</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">2-3%</div>
+          <div class="lbl fr">Prévalence de la scoliose</div>
+          <div class="lbl ar">انتشار الجنف</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">95%+</div>
+          <div class="lbl fr">Succès méthode Ponseti (pied bot)</div>
+          <div class="lbl ar">نسبة نجاح طريقة بونسيتي</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">6 sem.</div>
+          <div class="lbl fr">Âge idéal dépistage hanche</div>
+          <div class="lbl ar">السن المثالي لكشف الورك</div>
+        </div>
+      </div>
+
+      <h2 class="fr">Signes d'alerte chez l'enfant</h2>
+      <h2 class="ar">علامات التنبيه عند الطفل</h2>
+
+      <p class="fr">Consultez rapidement un chirurgien pédiatre ou un orthopédiste pédiatrique si vous observez chez votre enfant :</p>
+      <p class="ar">استشفوا سريعاً جراح أطفال أو أخصائي تقويم عظام أطفال إذا لاحظتم لدى طفلكم:</p>
+
+      <ul class="fr">
+        <li><strong>Boiterie persistante</strong> ou modification de la démarche</li>
+        <li><strong>Douleur articulaire ou osseuse</strong> qui ne passe pas en quelques jours</li>
+        <li><strong>Gonflement, rougeur ou chaleur</strong> localisée sur un membre</li>
+        <li><strong>Impossibilité de bouger</strong> un membre ou de poser le pied à terre</li>
+        <li><strong>Déformation visible</strong> du pied, de la jambe ou du dos</li>
+        <li><strong>Asymétrie des plis fessiers</strong> chez le nourrisson (signe de dysplasie de hanche)</li>
+        <li><strong>Traumatisme</strong> avec impossibilité d'appui ou douleur intense</li>
+      </ul>
+      <ul class="ar">
+        <li><strong>عرج مستمر</strong> أو تغيّر في طريقة المشي</li>
+        <li><strong>ألم مفصلي أو عظمي</strong> لا يزول خلال أيام</li>
+        <li><strong>تورم، احمرار أو حرارة</strong> موضعية على طرف</li>
+        <li><strong>عجز عن تحريك</strong> طرف أو وضع القدم على الأرض</li>
+        <li><strong>تشوه ظاهر</strong> في القدم، أو الساق، أو الظهر</li>
+        <li><strong>عدم تناظر ثنايا الأرداف</strong> عند الرضيع (علامة خلل تنسج الورك)</li>
+        <li><strong>رضيض</strong> مع عجز عن الوقوف أو ألم شديد</li>
+      </ul>
+
+      <h2 class="fr">Prise en charge au cabinet</h2>
+      <h2 class="ar">التكفل في العيادة</h2>
+
+      <p class="fr">Le Dr Ziane Khodja assure au cabinet une prise en charge orthopédique complète pour les enfants :</p>
+      <p class="ar">تضمن الدكتورة زيان خوجة في العيادة تكفلاً تقويمياً شاملاً للأطفال:</p>
+
+      <ul class="fr">
+        <li><strong>Consultation et examen clinique orthopédique</strong> complet (démarche, amplitude articulaire, mesures angulaires)</li>
+        <li><strong>Prescription d'imagerie</strong> (radiographie, échographie, IRM si nécessaire)</li>
+        <li><strong>Immobilisation et plâtrage</strong> des fractures simples (membres inférieurs et supérieurs)</li>
+        <li><strong>Surveillance et retrait des broches</strong> et matériel d'ostéosynthèse</li>
+        <li><strong>Rééducation post-traumatique</strong> et suivi de consolidation osseuse</li>
+        <li><strong>Dépistage précoce</strong> des déformations congénitales (hanche, pied, colonne)</li>
+        <li><strong>Orientation chirurgicale</strong> vers le centre hospitalier spécialisé si nécessaire</li>
+      </ul>
+      <ul class="ar">
+        <li><strong>استشارة وفحص سريري تقويمي</strong> شامل (طريقة المشي، مدى المفاصل، القياسات الزاوية)</li>
+        <li><strong>وصف تصوير</strong> (أشعة، موجات فوق صوتية، رنين مغناطيسي إذا لزم)</li>
+        <li><strong>تثبيت وتجبير</strong> الكسور البسيطة (الأطراف العلوية والسفلى)</li>
+        <li><strong>متابعة وإزالة الدبابيس</strong> ومواد تثبيت العظام</li>
+        <li><strong>إعادة التأهيل بعد الرضيض</strong> ومتابعة التئام العظم</li>
+        <li><strong>الكشف المبكر</strong> عن التشوهات الخلقية (الورك، القدم، العمود الفقري)</li>
+        <li><strong>التوجيه الجراحي</strong> نحو المركز الاستشفائي المتخصص إذا لزم</li>
+      </ul>
+
+      <h2 class="fr">Traitement chirurgical</h2>
+      <h2 class="ar">العلاج الجراحي</h2>
+
+      <p class="fr">Certaines pathologies orthopédiques pédiatriques nécessitent une intervention chirurgicale :</p>
+      <p class="ar">بعض الأمراض التقويمية عند الأطفال تتطلب تدخلاً جراحياً:</p>
+
+      <ul class="fr">
+        <li><strong>Ostéosynthèse des fractures</strong> : pose de broches, vis ou plaques selon le type de fracture et l'âge de l'enfant</li>
+        <li><strong>Tenotomie du tendon d'Achille</strong> : dans le cadre du traitement du pied bot par la méthode de Ponseti</li>
+        <li><strong>Correction chirurgicale de la dysplasie de hanche</strong> : réduction ouvertes, ostéotomies pelviennes selon l'âge</li>
+        <li><strong>Chirurgie de la scoliose</strong> : arthrodèse vertébrale par instrumentation si l'angle de Cobb dépasse 45-50°</li>
+        <li><strong>Traitement des déformations angulaires</strong> : ostéotomies de correction (genoux en X ou en O sévères)</li>
+      </ul>
+      <ul class="ar">
+        <li><strong>تثبيت العظام:</strong> تركيب دبابيس، مسامير أو صفائح حسب نوع الكسر وسن الطفل</li>
+        <li><strong>قطع وتر العرقوب:</strong> ضمن علاج القدم الحنفاء بطريقة بونسيتي</li>
+        <li><strong>التصحيح الجراحي لخلل تنسج الورك:</strong> إعادة ضبط مفتوحة، قطع عظم الحوض حسب السن</li>
+        <li><strong>جراحة الجنف:</strong> دمج فقاري بأدوات إذا تجاوزت زاوية كوب 45-50 درجة</li>
+        <li><strong>علاج التشوهات الزاوية:</strong> قطع تصحيحي (للركبتين المتقابلتين أو المنفرجتين الشديدة)</li>
+      </ul>
+
+      <h2 class="fr">Suivi et rééducation</h2>
+      <h2 class="ar">المتابعة وإعادة التأهيل</h2>
+
+      <p class="fr">La rééducation et le suivi sont essentiels après tout traumatisme ou intervention orthopédique chez l'enfant. Le remodelage osseux naturel permet souvent une excellente récupération fonctionnelle, à condition de respecter les consignes d'immobilisation et les rendez-vous de contrôle.</p>
+      <p class="ar">إعادة التأهيل والمتابعة ضروريان بعد أي رضيض أو تدخل تقويمي عند الطفل. إعادة تشكيل العظم الطبيعية تسمح غالباً باستعادة وظيفية ممتازة، بشرط احترام تعليمات التثبيت ومواعيد المراقبة.</p>
+
+      <ul class="fr">
+        <li><strong>Contrôle radiographique</strong> à J7, J21 et selon consolidation</li>
+        <li><strong>Reprise progressive de l'appui</strong> sous contrôle médical</li>
+        <li><strong>Rééducation fonctionnelle</strong> si raideur ou amyotrophie</li>
+        <li><strong>Surveillance de la croissance</strong> jusqu'à la fin de l'adolescence (risque de déformation secondaire)</li>
+      </ul>
+      <ul class="ar">
+        <li><strong>مراقبة بالأشعة</strong> في اليوم 7، 21 وحسب التئام العظم</li>
+        <li><strong>العودة التدريجية للوقوف</strong> تحت المراقبة الطبية</li>
+        <li><strong>إعادة التأهيل الوظيفي</strong> إذا وجدت صلابة أو ضمور عضلي</li>
+        <li><strong>متابعة النمو</strong> حتى نهاية المراهقة (خطر تشوه ثانوي)</li>
+      </ul>
+
+      <section class="faq-section reveal">
+    <div class="wrap" style="max-width:860px;">
+      <h2 class="fr" style="text-align:center;margin-bottom:32px;">Questions fréquemment posées (FAQ)</h2>
+      <h2 class="ar" style="text-align:center;margin-bottom:32px;">الأسئلة الشائعة</h2>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">❓</span>
+            <span class="fr">Qu'est-ce que l'orthopédie pédiatrique exactement ?</span>
+            <span class="ar">ما هو تقويم العظام للأطفال بالضبط؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">C'est la branche de la chirurgie qui traite des affections du <strong>système musculo-squelettique chez l'enfant</strong>, du nourrisson à l'adolescent. Contrairement à l'adulte, l'enfant possède un squelette en croissance avec des cartilages de conjugaison (physe) qui nécessitent une prise en charge spécifique pour ne pas perturber sa croissance future.</p>
+          <p class="ar">هو فرع الجراحة الذي يعالج أمراض <strong>الجهاز العضلي الهيكلي عند الطفل</strong>، من الرضيع إلى المراهق. على عكس البالغ، يملك الطفل هيكلاً عظمياً نامياً مع غضاريف النمو (الفيز) التي تتطلب تكفلاً خاصاً حتى لا تُعطل نموه المستقبلي.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">🦴</span>
+            <span class="fr">Quelle est la fracture la plus fréquente chez l'enfant ?</span>
+            <span class="ar">ما هو الكسر الأكثر شيوعاً عند الطفل؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">La <strong>fracture de la clavicule</strong> est la plus fréquente, surtout chez le nouveau-né (traumatisme obstétrical) et l'enfant en bas âge. Elle guérit généralement très bien grâce au remodelage osseux naturel de l'enfant, souvent sans séquelle.</p>
+          <p class="ar"><strong>كسر الترقوة</strong> هو الأكثر شيوعاً، خاصة عند المولود الجديد (رضيض ولادي) والطفل الصغير. يشفى عادةً بشكل جيد جداً بفضل إعادة تشكيل العظم الطبيعية عند الطفل، غالباً بدون عواقب.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">👁️</span>
+            <span class="fr">Comment dépister précocement la dysplasie de la hanche ?</span>
+            <span class="ar">كيف يتم الكشف المبكر عن خلل تنسج الورك؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">Le dépistage se fait par <strong>examen clinique systématique</strong> à la naissance (manœuvres de Barlow et Ortolani) et par <strong>échographie de la hanche à 6 semaines</strong> de vie. L'asymétrie des plis fessiers chez le nourrisson est un signe d'alerte important à ne pas négliger.</p>
+          <p class="ar">يتم الكشف من خلال <strong>الفحص السريري النظامي</strong> عند الولادة (مناورات بارلو وأورتولاني) و<strong>الموجات فوق الصوتية للورك عند 6 أسابيع</strong> من العمر. عدم تناظر ثنايا الأرداف عند الرضيع هو علامة تنبيه مهمة لا يجب إهمالها.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">🦶</span>
+            <span class="fr">Le pied bot se soigne-t-il sans chirurgie ?</span>
+            <span class="ar">هل يُشفى القدم الحنفاء بدون جراحة؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">Oui, dans la grande majorité des cas grâce à la <strong>méthode de Ponseti</strong> : une série de plâtres progressifs appliqués chaque semaine permet de corriger la déformation. Une petite <strong>tenotomie du tendon d'Achille</strong> (sous anesthésie locale) est parfois nécessaire. Le taux de succès dépasse 95 % si le traitement est débuté précocement.</p>
+          <p class="ar">نعم، في الغالبية العظمى من الحالات بفضل <strong>طريقة بونسيتي</strong>: سلسلة من الجبائر التدريجية توضع كل أسبوع تسمح بتصحيح التشوه. قد تكون <strong>قطع وتر العرقوب</strong> الصغير (تحت التخدير الموضعي) ضرورية أحياناً. نسبة النجاح تتجاوز 95% إذا بدأ العلاج مبكراً.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">📊</span>
+            <span class="fr">Quels sont les signes d'alerte d'une scoliose chez l'adolescent ?</span>
+            <span class="ar">ما هي علامات التنبيه للجنف عند المراهق؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">Les principaux signes sont : <strong>asymétrie des épaules</strong> (une épaule plus haute que l'autre), <strong>déviation visible de la colonne</strong> en position debout, <strong>saillie d'une omoplate</strong> (aileron), et <strong>asymétrie de la taille</strong>. Le test de penché vers l'avant (test d'Adams) permet de visualiser une gibbosité dorsale.</p>
+          <p class="ar">العلامات الرئيسية هي: <strong>عدم تناظر الكتفين</strong> (كتف أعلى من الآخر)، <strong>انحراف ظاهر للعمود الفقري</strong> في وضعية الوقوف، <strong>بروز لوح كتف</strong> (جناح)، و<strong>عدم تناظر الخصر</strong>. اختبار الانحناء للأمام (اختبار آدامز) يسمح برؤية السنام الظهري.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">⏰</span>
+            <span class="fr">Combien de temps dure la consolidation d'une fracture chez l'enfant ?</span>
+            <span class="ar">كم تستمر عملية التئام الكسر عند الطفل؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">La consolidation est beaucoup plus rapide chez l'enfant que chez l'adulte grâce à la <strong>capacité de remodelage osseux</strong>. En moyenne : 3 semaines pour le nourrisson, 4-6 semaines pour le jeune enfant, et 6-8 semaines pour l'adolescent. Les contrôles radiographiques permettent de confirmer la consolidation avant le retrait du plâtre.</p>
+          <p class="ar">الالتئام أسرع بكثير عند الطفل منه عند البالغ بفضل <strong>قدرة إعادة تشكيل العظم</strong>. في المتوسط: 3 أسابيع للرضيع، 4-6 أسابيع للطفل الصغير، و6-8 أسابيع للمراهق. المراقبة بالأشعة تسمح بالتأكد من التئام العظم قبل إزالة الجبيرة.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">🏥</span>
+            <span class="fr">Quand consulter en urgence un orthopédiste pédiatrique ?</span>
+            <span class="ar">متى يجب استشارة أخصائي تقويم عظام أطفال بشكل طارئ؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">Consultez en urgence en cas de : <strong>traumatisme avec déformation visible</strong>, <strong>impossibilité totale de bouger un membre</strong>, <strong>douleur intense persistante</strong> après une chute, <strong>gonflement important</strong> d'une articulation, ou <strong>fièvre associée à une boiterie</strong> (signe possible d'ostéomyélite ou d'arthrite septique).</p>
+          <p class="ar">استشرفوا بشكل طارئ في حالة: <strong>رضيض مع تشوه ظاهر</strong>، <strong>عجز تام عن تحريك طرف</strong>، <strong>ألم شديد مستمر</strong> بعد سقوط، <strong>تورم كبير</strong> لمفصل، أو <strong>حمى مصحوبة بعرج</strong> (علامة محتملة لالتهاب العظم أو المفصل الصديدي).</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">👶</span>
+            <span class="fr">Mon enfant boite-t-il, est-ce grave ?</span>
+            <span class="ar">طفلي يعرج، هل هذا خطير؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">La boiterie chez l'enfant est toujours un <strong>signe à prendre au sérieux</strong>. Elle peut révéler une simple entorse, mais aussi une infection osseuse (ostéomyélite), une tumeur, une dysplasie de hanche ou une maladie neurologique. Toute boiterie persistante de plus de 24-48 heures doit être évaluée par un spécialiste.</p>
+          <p class="ar">العرج عند الطفل هو دائماً <strong>علامة يجب أخذها على محمل الجد</strong>. قد يكشف عن التواء بسيط، لكن أيضاً عن عدوى عظمية (التهاب العظم)، أو ورم، أو خلل تنسج الورك، أو مرض عصبي. يجب تقييم أي عرج مستمر لأكثر من 24-48 ساعة من قبل أخصائي.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">🔧</span>
+            <span class="fr">La rééducation est-elle nécessaire après une fracture ?</span>
+            <span class="ar">هل إعادة التأهيل ضرورية بعد الكسر؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">La rééducation est souvent <strong>recommandée</strong> pour éviter la raideur, retrouver la force musculaire et réapprendre une marche normale. Elle est particulièrement importante après les fractures du coude (risque de raideur), de la jambe (reprise d'appui) et du poignet. Le kinésithérapeute travaille en lien avec le chirurgien pédiatre.</p>
+          <p class="ar">إعادة التأهيل موصى بها <strong>غالباً</strong> لتجنب الصلابة، واستعادة القوة العضلية، وإعادة تعلم المشي الطبيعي. هي مهمة بشكل خاص بعد كسور الكوع (خطر الصلابة)، والساق (العودة للوقوف)، والمعصم. يعمل أخصائي العلاج الطبيعي بالتنسيق مع جراح الأطفال.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span style="display:flex;align-items:center;gap:12px;flex:1;">
+            <span class="faq-icon">📞</span>
+            <span class="fr">Comment prendre rendez-vous pour une consultation ?</span>
+            <span class="ar">كيف أحجز موعداً للاستشارة؟</span>
+          </span>
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-content">
+          <p class="fr">Vous pouvez nous contacter par téléphone au <a href="tel:+213558456019"><strong>+213 558 45 60 19</strong></a> ou via WhatsApp. Le Dr Ziane Khodja reçoit au cabinet à <strong>Ouled Moussa, Boumerdès</strong> pour tout problème orthopédique pédiatrique : fractures, déformations, traumatismes et suivi post-opératoire.</p>
+          <p class="ar">يمكنكم التواصل معنا عبر الهاتف <a href="tel:+213558456019"><strong>+213 558 45 60 19</strong></a> أو واتساب. تستقبل الدكتورة زيان خوجة في العيادة ب<strong>أولاد موسى، بومرداس</strong> لأي مشكل تقويمي للأطفال: الكسور، التشوهات، الرضوض والمتابعة بعد العملية.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+      <div class="cta-box">
+        <h3 class="fr">Vous suspectez une pathologie orthopédique chez votre enfant ?</h3>
+        <h3 class="ar">تشتبهون في مرض تقويمي لدى طفلكم؟</h3>
+        <p class="fr">Prenez rendez-vous dès maintenant pour un examen clinique complet. Une prise en charge précoce est essentielle pour préserver la croissance et la mobilité de votre enfant.</p>
+        <p class="ar">أخذوا موعداً الآن للفحص السريري الشامل. التكفل المبكر ضروري للحفاظ على نمو وحركة طفلكم.</p>
+        <a class="btn btn-lg btn-white" href="https://wa.me/213558456019" target="_blank" rel="noopener">
+          <span class="fr">Prendre rendez-vous</span>
+          <span class="ar">أخذ موعد</span>
+        </a>
+      </div>
+
+    </article>
+  </div>
+
+
+</main>
+<footer>
+  <p class="fr">© Cabinet Médical de Chirurgie Pédiatrique — Dr Ziane Khodja Djamila · Ouled Moussa, Boumerdès</p>
+  <p class="ar">© عيادة جراحة الأطفال — د. زيان خوجة جميلة · أولاد موسى، بومرداس</p>
+</footer>
+
+<script>
+function toggleLang(){
+  const body=document.body;const isAr=body.classList.contains('lang-ar');
+  localStorage.setItem('zk_lang_choice', isAr ? 'fr' : 'ar');
+  if(isAr){body.classList.remove('lang-ar');body.classList.add('lang-fr');document.documentElement.setAttribute('lang','fr');document.documentElement.setAttribute('dir','ltr');}
+  else{body.classList.remove('lang-fr');body.classList.add('lang-ar');document.documentElement.setAttribute('lang','ar');document.documentElement.setAttribute('dir','rtl');}
+}
+
+function toggleFaq(btn){
+  const content=btn.nextElementSibling;
+  const isOpen=btn.classList.contains('active');
+  document.querySelectorAll('.faq-btn').forEach(b=>{b.classList.remove('active');b.nextElementSibling.style.maxHeight=null;});
+  if(!isOpen){btn.classList.add('active');content.style.maxHeight=content.scrollHeight+'px';}
+}
+
+// Scroll reveal
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');}});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Header scroll effect
+const header=document.getElementById('main-header');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY>20){header.classList.add('scrolled');}
+  else{header.classList.remove('scrolled');}
+});
+</script>
+<script src="js/cookies.js"></script>
+<script src="js/lang-detect.js"></script>
+</body>
+</html>

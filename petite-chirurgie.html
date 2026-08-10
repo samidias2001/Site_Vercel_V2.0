@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="index, follow">
+<title>Petite chirurgie — Dr. Ziane Khodja | Ouled Moussa, Boumerdès</title>
+<meta name="description" content="Petite chirurgie pédiatrique au cabinet du Dr Ziane Khodja à Ouled Moussa, Boumerdès : ablation de kystes, lipomes, verrues, panaris, sutures de plaies.">
+<link rel="canonical" href="https://drzianekhodja.vercel.app/petite-chirurgie.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://drzianekhodja.vercel.app/petite-chirurgie.html">
+<meta property="og:title" content="Petite chirurgie — Dr. Ziane Khodja">
+<meta property="og:description" content="Ablation de kystes, lipomes, verrues, panaris, sutures de plaies et autres actes mineurs au cabinet.">
+<meta property="og:image" content="https://drzianekhodja.vercel.app/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=Tajawal:wght@400;500;700&family=Markazi+Text:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#0077B6;
+  --primary-dark:#005a8c;
+  --primary-light:#E6F4F1;
+  --accent:#00B4D8;
+  --accent-warm:#FF6B6B;
+  --bg:#F8FAFC;
+  --bg-white:#FFFFFF;
+  --ink:#0F172A;
+  --ink-soft:#475569;
+  --ink-muted:#94A3B8;
+  --line:#E2E8F0;
+  --radius:16px;
+  --radius-lg:24px;
+  --maxw:1140px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,0.04);
+  --shadow:0 4px 20px rgba(0,119,182,0.08);
+  --shadow-lg:0 12px 40px rgba(0,119,182,0.12);
+  --shadow-card:0 8px 30px rgba(15,23,42,0.06);
+}
+*{box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Work Sans',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+[dir="rtl"] body,body.lang-ar{font-family:'Tajawal',sans-serif;}
+.ar{display:none;}.fr{display:block;}
+body.lang-ar .ar{display:block;}body.lang-ar .fr{display:none;}
+span.ar,a.ar,button.ar{display:none;}
+body.lang-ar span.ar,body.lang-ar a.ar,body.lang-ar button.ar{display:inline-block;}
+body.lang-ar span.fr,body.lang-ar a.fr,body.lang-ar button.fr{display:none;}
+h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);margin:0 0 .4em 0;letter-spacing:-0.02em;}
+body.lang-ar h1,body.lang-ar h2,body.lang-ar h3,body.lang-ar h4{font-family:'Markazi Text',serif;font-weight:700;}
+p{color:var(--ink-soft);margin:0 0 1em 0;}a{color:var(--primary);text-decoration:none;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+img{max-width:100%;display:block;border-radius:var(--radius);}
+
+/* ===== HEADER ===== */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--line);transition:box-shadow .3s ease;}
+header.scrolled{box-shadow:0 4px 20px rgba(0,0,0,0.06);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--maxw);margin:0 auto;}
+.brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:12px;line-height:1.1;}
+body.lang-ar .brand{font-family:'Markazi Text',serif;font-size:1.4rem;}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--primary);}
+.brand-text{display:flex;flex-direction:column;}
+.brand small{font-family:'Work Sans',sans-serif;font-weight:600;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);}
+body.lang-ar .brand small{font-family:'Tajawal',sans-serif;text-transform:none;letter-spacing:0;font-size:.72rem;}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-links a{font-size:.88rem;font-weight:500;color:var(--ink-soft);transition:color .2s;}
+.nav-links a:hover{color:var(--primary);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
+.lang-toggle{border:1.5px solid var(--line);background:var(--bg-white);color:var(--ink);border-radius:999px;padding:7px 16px;font-size:.8rem;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s;}
+.lang-toggle:hover{border-color:var(--primary);color:var(--primary);}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;padding:10px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.88rem;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;transition:all .2s;box-shadow:0 4px 14px rgba(0,119,182,0.25);}
+.btn:hover{background:var(--primary-dark);transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,119,182,0.35);}
+.btn-pink{background:var(--accent-warm);box-shadow:0 4px 14px rgba(255,107,107,0.25);}
+.btn-pink:hover{background:#e55a5a;box-shadow:0 6px 20px rgba(255,107,107,0.35);}
+.btn-outline{background:transparent;color:var(--primary);border:1.5px solid var(--primary);box-shadow:none;}
+.btn-outline:hover{background:var(--primary);color:#fff;}
+.btn-white{background:#fff;color:var(--primary);box-shadow:0 4px 14px rgba(0,0,0,0.1);}
+.btn-white:hover{background:var(--primary-light);}
+.btn-lg{padding:14px 32px;font-size:1rem;}
+
+/* ===== ARTICLE PAGE ===== */
+.article-hero{position:relative;padding:120px 0 40px;background:linear-gradient(135deg, #E6F4F1 0%, #F0F9FF 50%, #F8FAFC 100%);overflow:hidden;}
+.article-hero::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle, rgba(0,180,216,0.08) 0%, transparent 70%);border-radius:50%;}
+.article-hero::after{content:'';position:absolute;bottom:-80px;left:-80px;width:300px;height:300px;background:radial-gradient(circle, rgba(0,119,182,0.06) 0%, transparent 70%);border-radius:50%;}
+.article-meta{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;}
+.cat-badge{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.02em;}
+.cat-acte{background:#ECFDF5;color:#059669;}
+.article-hero h1{font-size:clamp(2rem,4.5vw,3rem);line-height:1.1;margin-bottom:.3em;}
+.article-hero .lead{font-size:1.1rem;max-width:60ch;color:var(--ink-soft);line-height:1.7;}
+.article-body{background:var(--bg-white);border-radius:var(--radius-lg);padding:48px 56px;margin:-20px auto 0;max-width:860px;position:relative;z-index:10;box-shadow:var(--shadow-card);border:1px solid var(--line);}
+@media(max-width:768px){.article-body{padding:32px 24px;}}
+.article-body h2{font-size:1.5rem;margin:2em 0 .6em;padding-top:1.5em;border-top:1px solid var(--line);}
+.article-body h2:first-of-type{margin-top:0;padding-top:0;border-top:none;}
+.article-body h3{font-size:1.15rem;margin:1.4em 0 .5em;color:var(--ink-soft);}
+.article-body p{font-size:1rem;line-height:1.8;margin-bottom:1.2em;}
+.article-body ul, .article-body ol{margin:0 0 1.4em 0;padding-left:1.5em;}
+body.lang-ar .article-body ul, body.lang-ar .article-body ol{padding-left:0;padding-right:1.5em;}
+.article-body li{margin-bottom:.6em;color:var(--ink-soft);line-height:1.7;}
+.article-body strong{color:var(--ink);}
+.actes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0;}
+@media(max-width:600px){.actes-grid{grid-template-columns:1fr;}}
+.acte-card{background:var(--bg);border-radius:var(--radius);padding:20px 24px;border:1px solid var(--line);transition:all .2s;}
+.acte-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm);}
+.acte-card .icon{font-size:1.6rem;margin-bottom:8px;display:block;}
+.acte-card h4{font-size:1rem;margin:0 0 .3em;}
+.acte-card p{font-size:.88rem;margin:0;color:var(--ink-muted);line-height:1.5;}
+.cta-box{background:linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);border-radius:var(--radius);padding:32px 36px;color:#fff;margin:40px 0;text-align:center;}
+.cta-box h3{color:#fff;font-size:1.4rem;margin-bottom:.4em;}
+.cta-box p{color:rgba(255,255,255,0.85);margin-bottom:20px;}
+.cta-box .btn-white{color:var(--primary);}
+
+
+/* ===== FAQ ===== */
+.faq-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
+.faq-item{background:var(--bg);border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:all .2s;}
+.faq-item:hover{border-color:var(--primary-light);}
+.faq-item[open]{border-color:var(--primary);box-shadow:var(--shadow);}
+.faq-item summary{display:flex;align-items:center;gap:14px;padding:18px 22px;cursor:pointer;font-weight:600;font-size:1rem;color:var(--ink);list-style:none;position:relative;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-icon{font-size:1.5rem;line-height:1;flex-shrink:0;}
+.faq-item summary span:not(.faq-icon):not(.faq-chevron){flex:1;}
+.faq-chevron{font-size:.75rem;color:var(--primary);transition:transform .3s ease;margin-left:auto;}
+body.lang-ar .faq-chevron{margin-left:0;margin-right:auto;}
+.faq-item[open] .faq-chevron{transform:rotate(180deg);}
+.faq-answer{padding:0 22px 18px 22px;border-top:1px solid var(--line);}
+.faq-answer p{margin:14px 0 0 0;font-size:.95rem;line-height:1.7;color:var(--ink-soft);}
+@media(max-width:600px){.faq-item summary{padding:14px 16px;font-size:.92rem;}.faq-answer{padding:0 16px 14px 16px;}.faq-icon{font-size:1.3rem;}}
+
+/* ===== FOOTER ===== */
+footer{padding:32px 0;text-align:center;background:var(--ink);}
+footer p{font-size:.82rem;margin:0;color:var(--ink-muted);}
+
+/* ===== REVEAL ===== */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;}}
+
+/* ===== SCROLL HEADER ===== */
+header{transition:padding .3s ease;}
+header.scrolled .nav{padding:10px 24px;}
+</style>
+</head>
+<body class="lang-fr">
+
+<header id="main-header">
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <img src="1000040675.jpg" alt="Dr Ziane Khodja">
+      <div class="brand-text">
+        <span>Dr. Ziane Khodja</span>
+        <small class="fr">Chirurgienne pédiatre</small>
+        <small class="ar">جراحة الأطفال</small>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#services" class="fr">Actes</a><a href="index.html#services" class="ar">الأعمال</a>
+      <a href="index.html#docteur" class="fr">Le Docteur</a><a href="index.html#docteur" class="ar">الطبيبة</a>
+      <a href="index.html#galerie" class="fr">Galerie</a><a href="index.html#galerie" class="ar">معرض الصور</a>
+      <a href="index.html#avis" class="fr">Avis</a><a href="index.html#avis" class="ar">التقييمات</a>
+      <a href="index.html#contact" class="fr">Contact</a><a href="index.html#contact" class="ar">اتصال</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" onclick="toggleLang()">
+        <span class="fr">العربية</span>
+        <span class="ar">Français</span>
+      </button>
+      <a class="btn" href="tel:+213558456019">
+        <span class="fr">Appeler</span><span class="ar">اتصل بنا</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
+    <div class="wrap">
+      <div class="article-meta">
+        <span class="cat-badge cat-acte">Acte programmé</span>
+        <span style="color:var(--ink-muted);font-size:.85rem;">Dr. Ziane Khodja — Ouled Moussa, Boumerdès</span>
+      </div>
+      <h1 class="fr">Petite chirurgie</h1>
+      <h1 class="ar">الجراحة الصغرى</h1>
+      <p class="lead fr">Tout ce que les parents doivent savoir sur les actes de petite chirurgie pratiqués au cabinet : ablation de kystes, lipomes, verrues, panaris, sutures de plaies et autres interventions mineures.</p>
+      <p class="lead ar">كل ما يجب على الأولياء معرفته عن أعمال الجراحة الصغرى المُقدَّمة بالعيادة: استئصال الأكياس والورم الشحمي والثآليل والخراج وخياطة الجروح وغيرها من التدخلات البسيطة.</p>
+    </div>
+    <!-- IMAGE ILLUSTRATION -->
+  <section class="reveal">
+    <div class="wrap">
+      <img src="images\specialites\petites_chirurgie.jpg" alt="Enfant avec une égratignure recevant un examen de la part du chirurgien" loading="lazy" style="max-width:1000px;width:100%;margin:0 auto;">
+    </div>
+  </section>
+    
+  </section>
+
+  <!-- ARTICLE BODY -->
+  <div class="wrap">
+    <article class="article-body reveal">
+
+      <h2 class="fr">Qu'est-ce que la petite chirurgie ?</h2>
+      <h2 class="ar">ما هي الجراحة الصغرى؟</h2>
+      <p class="fr">La petite chirurgie regroupe l'ensemble des interventions chirurgicales mineures réalisables en ambulatoire, sans hospitalisation prolongée. Chez l'enfant, ces actes sont pratiqués dans un cadre adapté et rassurant, avec une anesthésie locale ou légère selon le cas, afin de limiter le stress du jeune patient.</p>
+      <p class="ar">تجمع الجراحة الصغرى كل التدخلات الجراحية البسيطة القابلة للتنفيذ في العيادة الخارجية، دون استشفاء مطوّل. عند الطفل، تُجرى هذه الأعمال في إطار ملائم ومطمئن، بتخدير موضعي أو خفيف حسب الحالة، لتقليص توتر المريض الصغير.</p>
+
+      <h2 class="fr">Actes pratiqués au cabinet</h2>
+      <h2 class="ar">الأعمال المُقدَّمة بالعيادة</h2>
+
+      <div class="actes-grid">
+        <div class="acte-card">
+          <span class="icon">🔵</span>
+          <h4 class="fr">Ablation de kystes sébacés</h4>
+          <h4 class="ar">استئصال الأكياس الدهنية</h4>
+          <p class="fr">Kystes bénins sous la peau, souvent indolores. Exérèse complète sous anesthésie locale.</p>
+          <p class="ar">أكياس حميدة تحت الجلد، غالباً غير مؤلمة. إزالة كاملة تحت التخدير الموضعي.</p>
+        </div>
+        <div class="acte-card">
+          <span class="icon">🟢</span>
+          <h4 class="fr">Ablation de lipomes</h4>
+          <h4 class="ar">استئصال الورم الشحمي</h4>
+          <p class="fr">Tumeurs grasses bénignes sous-cutanées. Extraction par incision minimale.</p>
+          <p class="ar">أورام دهنية حميدة تحت الجلد. استخراج عبر شق صغير.</p>
+        </div>
+        <div class="acte-card">
+          <span class="icon">🟡</span>
+          <h4 class="fr">Traitement des verrues</h4>
+          <h4 class="ar">علاج الثآليل</h4>
+          <p class="fr">Destruction par cryothérapie (azote liquide) ou curetage selon localisation et âge.</p>
+          <p class="ar">إتلاف بالتبريد (النيتروجين السائل) أو الكحت حسب الموقع والسن.</p>
+        </div>
+        <div class="acte-card">
+          <span class="icon">🔴</span>
+          <h4 class="fr">Panaris et abcès</h4>
+          <h4 class="ar">الخراج والتقرحات</h4>
+          <p class="fr">Incision et drainage des collections purulentes. Antibiothérapie associée si nécessaire.</p>
+          <p class="ar">شق وتصريف التجمعات القيحية. مضادات حيوية مصاحبة إذا لزم.</p>
+        </div>
+        <div class="acte-card">
+          <span class="icon">🩹</span>
+          <h4 class="fr">Sutures de plaies</h4>
+          <h4 class="ar">خياطة الجروح</h4>
+          <p class="fr">Sutures cutanées simples ou complexes. Fils résorbables ou non selon la localisation.</p>
+          <p class="ar">خياطات جلدية بسيطة أو معقدة. خيوط قابلة للذوبان أو لا حسب الموقع.</p>
+        </div>
+        <div class="acte-card">
+          <span class="icon">✂️</span>
+          <h4 class="fr">Exérèse de lésions cutanées</h4>
+          <h4 class="ar">استئصال الآفات الجلدية</h4>
+          <p class="fr">Nævus, grains de beauté suspects, kératoses. Biopsie si indication.</p>
+          <p class="ar">الشامات، والحبوب المريبة، والتقران. خزعة إذا دعت الحاجة.</p>
+        </div>
+        <div class="acte-card">
+          <span class="icon">💉</span>
+          <h4 class="fr">Drainage d'hématomes sous-unguéaux</h4>
+          <h4 class="ar">تصريف الدم تحت الظفر</h4>
+          <p class="fr">Soulagement immédiat de la pression après traumatisme digital.</p>
+          <p class="ar">تخفيف فوري للضغط بعد رضيض إصبع.</p>
+        </div>
+        <div class="acte-card">
+          <span class="icon">🦶</span>
+          <h4 class="fr">Ongle incarné</h4>
+          <h4 class="ar">الظفر الناشر</h4>
+          <p class="fr">Matricectomie partielle ou totale selon la récidive. Traitement définitif.</p>
+          <p class="ar">استئصال جزئي أو كلي للمسمة حسب التكرار. علاج نهائي.</p>
+        </div>
+      </div>
+
+      <h2 class="fr">Déroulement d'un acte de petite chirurgie</h2>
+      <h2 class="ar">سير عمل الجراحة الصغرى</h2>
+
+      <h3 class="fr">Consultation préalable</h3>
+      <h3 class="ar">الاستشارة المسبقة</h3>
+      <p class="fr">Chaque acte de petite chirurgie débute par une consultation d'évaluation. Le Dr Ziane Khodja examine la lésion, discute de l'indication chirurgicale, explique la technique envisagée et répond aux questions des parents. Un consentement éclairé est systématiquement recueilli.</p>
+      <p class="ar">يبدأ كل عمل جراحي صغير باستشارة تقييم. تفحص الدكتورة زيان خوجة الآفة، وتناقش الدلالة الجراحية، وتشرح التقنية المزمع اتباعها، وتجيب على أسئلة الأولياء. يتم جمع الموافقة المستنيرة بشكل منهجي.</p>
+
+      <h3 class="fr">Jour de l'intervention</h3>
+      <h3 class="ar">يوم التدخل</h3>
+      <ul class="fr">
+        <li><strong>Préparation</strong> : désinfection de la zone, pose d'un champ stérile</li>
+        <li><strong>Anesthésie</strong> : locale (injection de xylocaïne) ou légère sédation selon l'âge et la lésion</li>
+        <li><strong>Intervention</strong> : durée variable de 10 à 45 minutes selon la complexité</li>
+        <li><strong>Pansement</strong> : protection stérile et consignes de soins à domicile</li>
+        <li><strong>Surveillance</strong> : courte période d'observation avant le retour à domicile</li>
+      </ul>
+      <ul class="ar">
+        <li><strong>التحضير:</strong> تطهير المنطقة، وضع غطاء معقم</li>
+        <li><strong>التخدير:</strong> موضعي (حقن زيلوكايين) أو تخدير خفيف حسب السن والآفة</li>
+        <li><strong>التدخل:</strong> مدة متغيرة من 10 إلى 45 دقيقة حسب التعقيد</li>
+        <li><strong>الضمادة:</strong> حماية معقمة وتعليمات للعناية المنزلية</li>
+        <li><strong>المراقبة:</strong> فترة ملاحظة قصيرة قبل العودة للمنزل</li>
+      </ul>
+
+      <h3 class="fr">Soins post-opératoires</h3>
+      <h3 class="ar">العناية بعد العملية</h3>
+      <ul class="fr">
+        <li><strong>Pansements</strong> : renouvellement selon les consignes (souvent tous les 2-3 jours)</li>
+        <li><strong>Hygiène</strong> : éviter la macération, protéger la zone lors du bain</li>
+        <li><strong>Antalgiques</strong> : paracétamol adapté à l'âge en cas de douleur légère</li>
+        <li><strong>Antibiotiques</strong> : uniquement si prescription médicale</li>
+        <li><strong>Retrait des fils</strong> : entre 7 et 14 jours selon la localisation (fils non résorbables)</li>
+        <li><strong>Contrôle</strong> : rendez-vous de suivi à J7-J10 pour vérifier la cicatrisation</li>
+      </ul>
+      <ul class="ar">
+        <li><strong>الضمادات:</strong> تجديد حسب التعليمات (غالباً كل 2-3 أيام)</li>
+        <li><strong>النظافة:</strong> تجنب الترطيب، حماية المنطقة أثناء الاستحمام</li>
+        <li><strong>المسكنات:</strong> باراسيتامول ملائم للسن في حال ألم خفيف</li>
+        <li><strong>المضادات الحيوية:</strong> فقط بتوصية طبية</li>
+        <li><strong>إزالة الخيوط:</strong> بين 7 و 14 يوماً حسب الموقع (الخيوط غير القابلة للذوبان)</li>
+        <li><strong>المراقبة:</strong> موعد متابعة في اليوم 7-10 للتحقق من التئام الجرح</li>
+      </ul>
+
+      <h2 class="fr">Quand consulter ?</h2>
+      <h2 class="ar">متى تستشفون؟</h2>
+
+      <p class="fr">N'hésitez pas à prendre rendez-vous au cabinet pour les situations suivantes :</p>
+      <p class="ar">لا تترددوا في أخذ موعد بالعيادة للحالات التالية:</p>
+
+      <ul class="fr">
+        <li><strong>Kyste ou masse sous-cutanée</strong> qui grossit ou devient douloureuse</li>
+        <li><strong>Verrue</strong> qui saigne, change d'aspect ou gêne la marche (plantaire)</li>
+        <li><strong>Doigt rouge, gonflé et douloureux</strong> : suspicion de panaris</li>
+        <li><strong>Plaie profonde</strong> nécessitant une suture (idéalement dans les 6 premières heures)</li>
+        <li><strong>Ongle incarné</strong> récidivant ou infecté</li>
+        <li><strong>Lésion cutanée suspecte</strong> : changement de couleur, taille ou forme</li>
+        <li><strong>Corps étranger</strong> sous la peau (écharde, épine, verre)</li>
+      </ul>
+      <ul class="ar">
+        <li><strong>كيس أو كتلة تحت الجلد</strong> تكبر أو تصبح مؤلمة</li>
+        <li><strong>ثؤلولة</strong> تنزف، تتغيّر مظهراً، أو تعيق المشي (النباتية)</li>
+        <li><strong>إصبع أحمر، منتفخ ومؤلم:</strong> شك في خراج</li>
+        <li><strong>جرح عميق</strong> يحتاج خياطة (مثالياً في الساعات الست الأولى)</li>
+        <li><strong>ظفر ناشر</strong> متكرر أو ملتهب</li>
+        <li><strong>آفة جلدية مريبة:</strong> تغيّر اللون، الحجم أو الشكل</li>
+        <li><strong>جسم غريب</strong> تحت الجلد (شظية، شوكة، زجاج)</li>
+      </ul>
+
+      <h2 class="fr">Avantages de la prise en charge au cabinet</h2>
+      <h2 class="ar">مميزات التكفل بالعيادة</h2>
+
+      <ul class="fr">
+        <li><strong>Environnement familier et rassurant</strong> pour l'enfant, évitant l'anxiété de l'hôpital</li>
+        <li><strong>Attente réduite</strong> grâce aux rendez-vous programmés</li>
+        <li><strong>Présence des parents</strong> autorisée pendant toute la procédure</li>
+        <li><strong>Retour à domicile immédiat</strong> après la majorité des actes</li>
+        <li><strong>Coût maîtrisé</strong> comparé à une hospitalisation</li>
+        <li><strong>Suivi personnalisé</strong> par le même praticien de A à Z</li>
+      </ul>
+      <ul class="ar">
+        <li><strong>بيئة مألوفة ومطمئنة</strong> للطفل، تتجنب قلق المستشفى</li>
+        <li><strong>انتظار قصير</strong> بفضل المواعيد المبرمجة</li>
+        <li><strong>حضور الأولياء</strong> مسموح به طوال الإجراء</li>
+        <li><strong>عودة للمنزل فورية</strong> بعد غالبية الأعمال</li>
+        <li><strong>تكلفة متحكم فيها</strong> مقارنة بالاستشفاء</li>
+        <li><strong>متابعة شخصية</strong> من نفس الطبيبة من البداية إلى النهاية</li>
+      </ul>
+
+
+      <h2 class="fr">Questions fréquentes</h2>
+      <h2 class="ar">الأسئلة الشائعة</h2>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>
+            <span class="faq-icon">✂️</span>
+            <span class="fr">Mon enfant doit-il être à jeun avant l'intervention ?</span>
+            <span class="ar">هل يجب أن يكون طفلي صائماً قبل التدخل؟</span>
+            <span class="faq-chevron">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p class="fr">Pour les actes sous anesthésie locale simple, l'enfant peut manger normalement. En cas de sédation légère, un jeûne de 4 à 6 heures est recommandé selon l'âge. Ces consignes vous seront précisées lors de la consultation préalable.</p>
+            <p class="ar">بالنسبة للأعمال تحت التخدير الموضعي البسيط، يمكن للطفل الأكل بشكل طبيعي. في حال التخدير الخفيف، يُنصح بالصيام من 4 إلى 6 ساعات حسب السن. سيتم توضيح هذه التعليمات خلال الاستشارة المسبقة.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span class="faq-icon">🏥</span>
+            <span class="fr">Combien de temps dure l'intervention et la convalescence ?</span>
+            <span class="ar">كم تدوم العملية وفترة النقاهة؟</span>
+            <span class="faq-chevron">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p class="fr">La durée varie de 10 à 45 minutes selon la complexité. La convalescence est généralement rapide : retour aux activités normales en 24 à 48 heures pour la plupart des actes. Les fils non résorbables sont retirés entre 7 et 14 jours.</p>
+            <p class="ar">تتراوح المدة من 10 إلى 45 دقيقة حسب التعقيد. النقاهة سريعة عموماً: العودة للأنشطة الطبيعية خلال 24 إلى 48 ساعة لغالبية الأعمال. تُزال الخيوط غير القابلة للذوبان بين 7 و 14 يوماً.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span class="faq-icon">⚠️</span>
+            <span class="fr">Quels sont les signes de complication après l'opération ?</span>
+            <span class="ar">ما هي علامات المضاعفات بعد العملية؟</span>
+            <span class="faq-chevron">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p class="fr">Contactez le cabinet en cas de : rougeur ou chaleur excessive autour de la plaie, écoulement purulent, fièvre au-delà de 38°C, douleur intense non calmée par les antalgiques, ou gonflement anormal. Ces signes sont rares mais nécessitent une évaluation rapide.</p>
+            <p class="ar">اتصلوا بالعيادة في حال: احمرار أو حرارة مفرطة حول الجرح، إفراز قيحي، حرارة تتجاوز 38 درجة، ألم شديد لا تهدئه المسكنات، أو تورم غير طبيعي. هذه العلامات نادرة لكنها تستدعي تقييماً سريعاً.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span class="faq-icon">🔄</span>
+            <span class="fr">L'intervention peut-elle échouer ou nécessiter une reprise ?</span>
+            <span class="ar">هل يمكن أن تفشل العملية أو تستلزم إعادة؟</span>
+            <span class="faq-chevron">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p class="fr">Les complications sont rares en petite chirurgie. Un kyste peut très occasionnellement récidiver si l'enveloppe n'a pas été entièrement retirée. Dans ce cas, une reprise chirurgicale simple est envisageable. Le Dr Ziane Khodja vous expliquera les risques spécifiques lors de la consultation.</p>
+            <p class="ar">المضاعفات نادرة في الجراحة الصغرى. قد يتكرر الكيس نادراً جداً إذا لم تُزال الكيسة بالكامل. في هذه الحالة، يمكن النظر في إعادة جراحية بسيطة. ستشرح لكم الدكتورة زيان خوجة المخاطر الخاصة خلال الاستشارة.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span class="faq-icon">👨‍👩‍👧</span>
+            <span class="fr">Puis-je rester avec mon enfant pendant l'intervention ?</span>
+            <span class="ar">هل يمكنني البقاء مع طفلي أثناء التدخل؟</span>
+            <span class="faq-chevron">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p class="fr">Oui, la présence d'un parent est autorisée et même encouragée pendant toute la procédure. Cela rassure l'enfant et réduit considérablement son anxiété. Le cabinet est aménagé pour accueillir les parents dans le bloc opératoire.</p>
+            <p class="ar">نعم، حضور أحد الوالدين مسموح به ومشجّع عليه طوال الإجراء. هذا يطمئن الطفل ويقلل قلقه بشكل كبير. العيادة مُجهزة لاستقبال الأولياء في غرفة العمليات.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span class="faq-icon">💰</span>
+            <span class="fr">Quel est le coût d'un acte de petite chirurgie ?</span>
+            <span class="ar">ما هي تكلفة عمل الجراحة الصغرى؟</span>
+            <span class="faq-chevron">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p class="fr">Les tarifs varient selon la nature et la complexité de l'acte. Une estimation vous sera communiquée lors de la consultation préalable. La prise en charge au cabinet reste nettement moins coûteuse qu'une hospitalisation. Le cabinet accepte les règlements en espèces et par CCP.</p>
+            <p class="ar">تختلف الأسعار حسب طبيعة وتعقيد العمل. سيتم إبلاغكم بالتقدير خلال الاستشارة المسبقة. يبقى التكفل بالعيادة أقل تكلفة بكثير من الاستشفاء. العيادة تقبل الدفع نقداً وعبر الصندوق البريدي الجزائري.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="cta-box">
+        <h3 class="fr">Besoin d'un acte de petite chirurgie pour votre enfant ?</h3>
+        <h3 class="ar">تحتاجون عمل جراحي صغير لطفلكم؟</h3>
+        <p class="fr">Prenez rendez-vous dès maintenant pour une consultation d'évaluation. La plupart des actes peuvent être réalisés rapidement, dans un cadre sécurisé et adapté aux enfants.</p>
+        <p class="ar">أخذوا موعداً الآن لاستشارة تقييم. يمكن إنجاز غالبية الأعمال بسرعة، في إطار آمن وملائم للأطفال.</p>
+        <a class="btn btn-lg btn-white" href="https://wa.me/213558456019" target="_blank" rel="noopener">
+          <span class="fr">Prendre rendez-vous</span>
+          <span class="ar">أخذ موعد</span>
+        </a>
+      </div>
+
+    </article>
+  </div>
+
+</main>
+
+<footer>
+  <p class="fr">© Cabinet Médical de Chirurgie Pédiatrique — Dr Ziane Khodja Djamila · Ouled Moussa, Boumerdès</p>
+  <p class="ar">© عيادة جراحة الأطفال — د. زيان خوجة جميلة · أولاد موسى، بومرداس</p>
+</footer>
+
+<script>
+function toggleLang(){
+  const body=document.body;const isAr=body.classList.contains('lang-ar');
+  localStorage.setItem('zk_lang_choice', isAr ? 'fr' : 'ar');
+  if(isAr){body.classList.remove('lang-ar');body.classList.add('lang-fr');document.documentElement.setAttribute('lang','fr');document.documentElement.setAttribute('dir','ltr');}
+  else{body.classList.remove('lang-fr');body.classList.add('lang-ar');document.documentElement.setAttribute('lang','ar');document.documentElement.setAttribute('dir','rtl');}
+}
+
+// Scroll reveal
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');}});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Header scroll effect
+const header=document.getElementById('main-header');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY>20){header.classList.add('scrolled');}
+  else{header.classList.remove('scrolled');}
+});
+</script>
+<script src="js/cookies.js"></script>
+<script src="js/lang-detect.js"></script>
+</body>
+</html>
