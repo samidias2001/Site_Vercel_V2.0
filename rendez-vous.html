@@ -31,7 +31,7 @@ body.lang-ar span.fr,body.lang-ar a.fr,body.lang-ar button.fr{display:none;}
 h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);margin:0 0 .4em 0;letter-spacing:-0.01em;}
 body.lang-ar h1,body.lang-ar h2,body.lang-ar h3{font-family:'Markazi Text',serif;font-weight:700;}
 p{color:var(--ink-soft);margin:0 0 1em 0;}a{color:var(--accent-blue);}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.wrap{max-width:var(--maxw);width:100%;margin:0 auto;padding:0 24px;box-sizing:border-box;}
 img{max-width:100%;display:block;border-radius:var(--radius);}
 header{position:sticky;top:0;z-index:50;background:rgba(240,244,248,0.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto;}
@@ -56,7 +56,27 @@ body.lang-ar .breadcrumb{text-align:right;}
 .trust-row{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;margin-top:22px;}
 .trust-item{display:flex;align-items:center;gap:8px;font-size:.85rem;color:#E0ECF8;}
 section{padding:44px 0;}
-.form-card{background:var(--bg-card);border-radius:20px;padding:36px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(16,48,96,0.06);max-width:640px;margin:-56px auto 0;position:relative;}
+.form-card{background:var(--bg-card);border-radius:20px;padding:36px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(16,48,96,0.06);max-width:640px;width:100%;box-sizing:border-box;margin:-56px auto 0;position:relative;}
+html,body{overflow-x:hidden;max-width:100vw;}
+.wrap{width:100%;box-sizing:border-box;}
+/* Fix mobile : évite débordement horizontal */
+@media (max-width:640px){
+  .wrap{padding:0 16px;}
+  .form-card{padding:22px 16px;margin:-32px auto 0;border-radius:16px;width:100%;max-width:100%;}
+  .page-hero{padding:28px 0 24px;}
+  .nav{padding:12px 16px;}
+  .page-hero h1{font-size:1.6rem;}
+}
+@media (max-width:360px){
+  .form-card{padding:18px 12px;}
+  .age-input-row select{width:72px;}
+}
+/* Fallback si IntersectionObserver ne se déclenche pas sur mobile */
+.reveal{opacity:1;transform:none;}
+.reveal:not(.in){opacity:0;transform:translateY(14px);}
+.reveal.in{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){.reveal,.reveal:not(.in){opacity:1;transform:none;}}
+
 .form-card h2{font-size:1.3rem;color:var(--accent-blue);text-align:center;margin-bottom:6px;}
 .form-card .sub{text-align:center;font-size:.9rem;margin-bottom:26px;}
 .form-group{margin-bottom:18px;}
@@ -275,24 +295,71 @@ function toggleLang(){
 const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');}});},{threshold:0.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// Empêcher les dates passées (min natif + re-vérification à chaque changement, car une date tapée
-// manuellement peut contourner l'attribut min sur certains navigateurs)
+// --- FIX DATE : timezone Alger + saisie clavier numérique ---
+function getTodayAlgiers(){
+  // Format YYYY-MM-DD dans le fuseau Afrique/Alger
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'Africa/Algiers' });
+}
 const dateInput = document.getElementById('desiredDate');
 const dateErrorMsg = document.getElementById('dateErrorMsg');
-const today = new Date().toISOString().split('T')[0];
+let today = getTodayAlgiers();
 dateInput.min = today;
 
+// Met à jour le min chaque jour si page reste ouverte
+setInterval(()=>{ today = getTodayAlgiers(); dateInput.min = today; }, 60*60*1000);
+
 function isPastDate(value){
-  return !value || value < today;
+  if(!value) return true;
+  // Autorise la saisie en cours : ne valide que si date complète YYYY-MM-DD
+  if(value.length !== 10) return false;
+  // Comparaison en string YYYY-MM-DD fonctionne si format complet
+  const currentToday = getTodayAlgiers();
+  return value < currentToday;
 }
 
-dateInput.addEventListener('change', function(){
-  if(isPastDate(dateInput.value)){
-    dateInput.value = '';
-    dateErrorMsg.style.display = 'block';
+function validateDateField(showError){
+  const val = dateInput.value;
+  if(!val){
+    if(showError) dateErrorMsg.style.display = 'none';
+    return false;
+  }
+  if(val.length !== 10){
+    // Saisie en cours, on ne bloque pas
+    dateErrorMsg.style.display = 'none';
+    return false;
+  }
+  if(isPastDate(val)){
+    if(showError){
+      dateErrorMsg.style.display = 'block';
+      dateInput.classList.add('date-error');
+    }
+    return true;
   } else {
     dateErrorMsg.style.display = 'none';
+    dateInput.classList.remove('date-error');
+    return false;
   }
+}
+
+dateInput.addEventListener('input', function(){
+  // Pendant la frappe au pavé numérique, on n'efface pas, on cache juste l'erreur si incomplet
+  validateDateField(false);
+});
+
+dateInput.addEventListener('change', function(){
+  // Quand la date est commitée (blur ou picker)
+  if(validateDateField(true) && dateInput.value.length===10){
+    // Ne vide plus automatiquement si c'est juste une faute de frappe, laisse l'utilisateur corriger
+    // On vide seulement si vraiment très ancien (>1 an) ou on laisse le message
+    if(dateInput.value < getTodayAlgiers()){
+      // Option douce : on garde la valeur mais on montre l'erreur, on ne vide pas
+      // dateInput.value = '';
+    }
+  }
+});
+
+dateInput.addEventListener('blur', function(){
+  validateDateField(true);
 });
 
 // Soumission du formulaire
@@ -318,7 +385,7 @@ form.addEventListener('submit', async function(e){
     website: document.getElementById('website').value,
   };
 
-  if(isPastDate(payload.desiredDate)){
+  if(!payload.desiredDate || payload.desiredDate.length!==10 || isPastDate(payload.desiredDate)){
     dateErrorMsg.style.display = 'block';
     dateInput.focus();
     dateInput.scrollIntoView({behavior:'smooth', block:'center'});
@@ -346,7 +413,9 @@ form.addEventListener('submit', async function(e){
       statusSuccess.classList.add('show');
       statusSuccess.scrollIntoView({behavior:'smooth', block:'center'});
       form.reset();
+      today = getTodayAlgiers();
       dateInput.min = today;
+      dateErrorMsg.style.display='none';
     } else {
       throw new Error('Erreur serveur');
     }
