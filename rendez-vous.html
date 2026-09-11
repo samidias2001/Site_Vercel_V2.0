@@ -157,6 +157,20 @@ footer p{font-size:.82rem;margin:0;color:var(--ink-soft);}
   font-variant-ligatures:none;
 }
 
+
+/* HEADER TÉLÉPHONE - icône seule sur mobile */
+.btn-phone-header .fa-phone{font-size:1rem;}
+@media (max-width:680px){
+  .btn-phone-header{
+    width:42px;height:42px;padding:0 !important;
+    border-radius:50%;
+    justify-content:center;
+    gap:0;
+  }
+  .btn-phone-header span{display:none !important;}
+  .btn-phone-header .fa-phone{margin:0;}
+}
+
 </style>
 </head>
 <body class="lang-fr">
@@ -181,7 +195,7 @@ footer p{font-size:.82rem;margin:0;color:var(--ink-soft);}
     </a>
     <div class="nav-actions">
       <button class="lang-toggle" onclick="toggleLang()"><i class="fa-solid fa-globe"></i> <span class="fr">العربية</span><span class="ar">Français</span></button>
-      <a href="tel:0558456019" class="btn" style="padding:8px 14px;font-size:.84rem;"><i class="fa-solid fa-phone"></i> <span class="fr phone-number" dir="ltr">0558 45 60 19</span><span class="ar phone-number" dir="ltr">0558 45 60 19</span></a>
+      <a href="tel:0558456019" class="btn btn-phone-header" style="padding:8px 14px;font-size:.84rem;"><i class="fa-solid fa-phone"></i> <span class="fr phone-number" dir="ltr">0558 45 60 19</span><span class="ar phone-number" dir="ltr">0558 45 60 19</span></a>
     </div>
   </div>
 </header>
@@ -210,8 +224,8 @@ footer p{font-size:.82rem;margin:0;color:var(--ink-soft);}
         <div class="form-card-header">
           <div class="doc-icon logo-header"><img src="logo_rond.png" alt="Logo"></div>
           <div>
-            <h2 class="fr">Formulaire de rendez-vous - Dr. Ziane Khodja Djamila</h2>
-            <h2 class="ar">استمارة موعد - د. زيان خوجة جميلة</h2>
+            <h2 class="fr">Formulaire de rendez-vous - Dr. Ziane Khodja D.</h2>
+            <h2 class="ar">استمارة موعد - د. زيان خوجة ج.</h2>
             <p class="fr">Chirurgienne pédiatre • 15 ans d'expérience hospitalière • Ouled Moussa, Boumerdès</p>
             <p class="ar">جراحة الأطفال • 15 سنة خبرة استشفائية • أولاد موسى، بومرداس</p>
           </div>
@@ -370,6 +384,26 @@ form.addEventListener('submit', async function(e){
   const originalContent=submitBtn.innerHTML; submitBtn.disabled=true; submitBtn.innerHTML='<span class="spinner"></span> <span class="fr">Envoi sécurisé...</span><span class="ar">جاري الإرسال الآمن...</span>';
   try{ const res=await fetch('/api/send-appointment',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}); if(res.ok){ statusSuccess.classList.add('show'); statusSuccess.scrollIntoView({behavior:'smooth', block:'center'}); form.reset(); today=getTodayAlgiers(); dateInput.min=today; } else { throw new Error('Erreur serveur'); } }catch(err){ statusError.classList.add('show'); statusError.scrollIntoView({behavior:'smooth', block:'center'}); }finally{ submitBtn.disabled=false; submitBtn.innerHTML=originalContent; }
 });
+
+// --- AUTO SCROLL vers début formulaire sur mobile ---
+window.addEventListener('load', function(){
+  const isMobile = window.innerWidth <= 768;
+  if(isMobile){
+    setTimeout(function(){
+      const formHeader = document.querySelector('.form-card-header');
+      const formCard = document.querySelector('.form-card');
+      const target = formHeader || formCard;
+      if(target){
+        // Affiche le début du formulaire "Formulaire de rendez-vous Dr Ziane Khodja D."
+        const headerHeight = document.querySelector('header') ? document.querySelector('header').offsetHeight : 70;
+        const elementTop = target.getBoundingClientRect().top + window.pageYOffset;
+        const offset = elementTop - headerHeight - 12;
+        window.scrollTo({top: offset, behavior:'smooth'});
+      }
+    }, 600);
+  }
+});
+
 syncAgeUnitOptions();
 </script>
 </body>
