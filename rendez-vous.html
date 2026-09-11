@@ -1,287 +1,330 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-<title>Prendre rendez-vous — Dr. Ziane Khodja | Chirurgie pédiatrique</title>
-<meta name="description" content="Prenez rendez-vous en ligne au cabinet de chirurgie pédiatrique du Dr. Ziane Khodja Djamila à Ouled Moussa, Boumerdès. Réponse rapide, formulaire simple et sécurisé.">
+<title>Formulaire Officiel - Prendre RDV | Dr. Ziane Khodja | Cabinet Ouled Moussa</title>
+<meta name="description" content="Formulaire officiel du Cabinet de chirurgie pédiatrique Dr. Ziane Khodja Djamila à Ouled Moussa, Boumerdès. Demande de rendez-vous sécurisée, réponse sous 24h.">
 <link rel="canonical" href="https://drzianekhodja.vercel.app/rendez-vous.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:url" content="https://drzianekhodja.vercel.app/rendez-vous.html">
-<meta property="og:title" content="Prendre rendez-vous — Dr Ziane Khodja | Chirurgienne pédiatre">
-<meta property="og:description" content="Formulaire de prise de rendez-vous en ligne — Cabinet de chirurgie pédiatrique à Ouled Moussa, Boumerdès.">
+<meta property="og:title" content="Formulaire Officiel - Dr Ziane Khodja | Chirurgienne pédiatre - Ouled Moussa">
+<meta property="og:description" content="Demande de rendez-vous officielle et sécurisée. Cabinet agréé à Ouled Moussa, Boumerdès. Réponse du secrétariat sous 24h.">
 <meta property="og:image" content="https://drzianekhodja.vercel.app/og-image.jpg">
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&family=Markazi+Text:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 :root{--bg:#F0F4F8;--bg-card:#FFFFFF;--ink:#103060;--ink-soft:#4A6B8A;--accent-blue:#0060B0;--accent-blue-light:#E8F0FA;--accent-pink:#D94A7A;--accent-pink-light:#F0D0E0;--line:#D0E0F0;--white:#FFFFFF;--radius:14px;--maxw:1080px;--ok:#2F855A;--ok-bg:#EDFCF3;--err:#C53030;--err-bg:#FDECEC;}
-*{box-sizing:border-box;}html{scroll-behavior:smooth;}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Work Sans',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
-[dir="rtl"] body,body.lang-ar{font-family:'Tajawal',sans-serif;}
-.ar{display:none;}.fr{display:block;}
-body.lang-ar .ar{display:block;}body.lang-ar .fr{display:none;}
-span.ar,a.ar,button.ar{display:none;}
-body.lang-ar span.ar,body.lang-ar a.ar,body.lang-ar button.ar{display:inline-block;}
-body.lang-ar span.fr,body.lang-ar a.fr,body.lang-ar button.fr{display:none;}
-h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);margin:0 0 .4em 0;letter-spacing:-0.01em;}
-body.lang-ar h1,body.lang-ar h2,body.lang-ar h3{font-family:'Markazi Text',serif;font-weight:700;}
-p{color:var(--ink-soft);margin:0 0 1em 0;}a{color:var(--accent-blue);}
+*{box-sizing:border-box;}html{scroll-behavior:smooth;overflow-x:hidden;}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Work Sans',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw;}
+.ar{display:none;}.fr{display:block;}body.lang-ar .ar{display:block;}body.lang-ar .fr{display:none;}span.ar,a.ar,button.ar{display:none;}body.lang-ar span.ar,body.lang-ar a.ar,body.lang-ar button.ar{display:inline-block;}body.lang-ar span.fr,body.lang-ar a.fr,body.lang-ar button.fr{display:none;}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);margin:0 0 .4em 0;letter-spacing:-0.01em;}body.lang-ar h1,body.lang-ar h2,body.lang-ar h3{font-family:'Markazi Text',serif;font-weight:700;}
 .wrap{max-width:var(--maxw);width:100%;margin:0 auto;padding:0 24px;box-sizing:border-box;}
-img{max-width:100%;display:block;border-radius:var(--radius);}
-header{position:sticky;top:0;z-index:50;background:rgba(240,244,248,0.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto;}
-.brand{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:12px;line-height:1.1;}
-body.lang-ar .brand{font-family:'Markazi Text',serif;font-size:1.35rem;}
-.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover;}
-.brand-text{display:flex;flex-direction:column;}
-.brand small{font-family:'Work Sans',sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-pink);}
-body.lang-ar .brand small{font-family:'Tajawal',sans-serif;text-transform:none;letter-spacing:0;}
+/* TOP OFFICIAL BAR */
+.top-official{background:#0A2A5A;color:#fff;font-size:.78rem;padding:8px 0;text-align:center;letter-spacing:.02em;}
+.top-official .wrap{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;}
+.top-official i{color:#7ED321;}
+.top-official strong{color:#7ED321;}
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.98);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 2px 12px rgba(16,48,96,0.06);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--maxw);margin:0 auto;width:100%;box-sizing:border-box;}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);}
+.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--line);}
+.brand-text{display:flex;flex-direction:column;line-height:1.1;}
+.brand-title{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);}
+body.lang-ar .brand-title{font-family:'Markazi Text',serif;font-size:1.35rem;}
+.brand small{font-family:'Work Sans',sans-serif;font-weight:600;font-size:.70rem;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-pink);}
 .nav-actions{display:flex;align-items:center;gap:10px;}
-.lang-toggle{border:1px solid var(--line);background:var(--white);color:var(--ink);border-radius:999px;padding:7px 14px;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit;}
+.lang-toggle{border:1.5px solid var(--line);background:var(--white);color:var(--ink);border-radius:999px;padding:7px 16px;font-size:.84rem;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;}
 .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent-blue);color:var(--white);padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.9rem;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;}
 .btn:hover{background:var(--ink);}.btn-pink{background:var(--accent-pink);}.btn-pink:hover{background:#B03560;}
-.btn-outline{background:transparent;color:var(--accent-blue);border:1.5px solid var(--accent-blue);}
-.btn-outline:hover{background:var(--accent-blue);color:var(--white);}
-.page-hero{background:var(--accent-blue);color:var(--white);padding:48px 0 40px;text-align:center;}
-.page-hero h1{color:var(--white);font-size:clamp(1.8rem,4vw,2.6rem);}
-.page-hero p{color:#E0ECF8;max-width:640px;margin:0 auto;}
-.breadcrumb{font-size:.85rem;color:#E0ECF8;margin-bottom:16px;text-align:left;}
+/* HERO OFFICIEL */
+.page-hero{background:linear-gradient(135deg, var(--accent-blue) 0%, #0A3D7A 100%);color:var(--white);padding:44px 0 72px;text-align:center;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;top:-50%;left:-20%;width:140%;height:200%;background:radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 60%);pointer-events:none;}
+.page-hero h1{color:var(--white);font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:10px;position:relative;}
+.page-hero .lead{color:#E0ECF8;max-width:680px;margin:0 auto;font-size:1.05rem;position:relative;}
+.breadcrumb{font-size:.82rem;color:#B8D4F0;margin-bottom:14px;text-align:left;position:relative;}
 body.lang-ar .breadcrumb{text-align:right;}
-.breadcrumb a{color:#F0F4F8;text-decoration:none;}.breadcrumb a:hover{text-decoration:underline;}
-.trust-row{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;margin-top:22px;}
-.trust-item{display:flex;align-items:center;gap:8px;font-size:.85rem;color:#E0ECF8;}
-section{padding:44px 0;}
-.form-card{background:var(--bg-card);border-radius:20px;padding:36px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(16,48,96,0.06);max-width:640px;width:100%;box-sizing:border-box;margin:-56px auto 0;position:relative;}
-html,body{overflow-x:hidden;max-width:100vw;}
-.wrap{width:100%;box-sizing:border-box;}
-/* Fix mobile : évite débordement horizontal */
-@media (max-width:640px){
-  .wrap{padding:0 16px;}
-  .form-card{padding:22px 16px;margin:-32px auto 0;border-radius:16px;width:100%;max-width:100%;}
-  .page-hero{padding:28px 0 24px;}
-  .nav{padding:12px 16px;}
-  .page-hero h1{font-size:1.6rem;}
-}
-@media (max-width:360px){
-  .form-card{padding:18px 12px;}
-  .age-input-row select{width:72px;}
-}
-/* Fallback si IntersectionObserver ne se déclenche pas sur mobile */
-.reveal{opacity:1;transform:none;}
-.reveal:not(.in){opacity:0;transform:translateY(14px);}
-.reveal.in{opacity:1;transform:none;}
-@media (prefers-reduced-motion:reduce){.reveal,.reveal:not(.in){opacity:1;transform:none;}}
-
-.form-card h2{font-size:1.3rem;color:var(--accent-blue);text-align:center;margin-bottom:6px;}
-.form-card .sub{text-align:center;font-size:.9rem;margin-bottom:26px;}
+.breadcrumb a{color:#E0ECF8;text-decoration:none;}
+.official-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(126,211,33,0.15);border:1px solid rgba(126,211,33,0.4);color:#C8F08A;padding:6px 14px;border-radius:999px;font-size:.78rem;font-weight:600;margin-bottom:18px;position:relative;}
+.trust-row{display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:center;margin-top:24px;position:relative;}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:.84rem;color:#E0ECF8;background:rgba(255,255,255,0.08);padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.12);}
+.trust-item i{color:#7ED321;}
+/* FORM CARD OFFICIEL */
+.form-section{padding:0 0 44px;}
+.form-card{background:var(--bg-card);border-radius:20px;padding:0;border:1px solid var(--line);box-shadow:0 12px 40px rgba(16,48,96,0.09);max-width:680px;width:100%;box-sizing:border-box;margin:-56px auto 0;position:relative;overflow:hidden;}
+.form-card-header{background:linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);padding:26px 32px 20px;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:center;}
+.form-card-header .doc-icon{width:54px;height:54px;background:var(--accent-blue-light);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--accent-blue);font-size:1.5rem;flex-shrink:0;}
+.form-card-header h2{font-size:1.25rem;color:var(--ink);margin:0;}
+.form-card-header p{font-size:.84rem;color:var(--ink-soft);margin:4px 0 0;}
+.form-card-body{padding:28px 32px 32px;}
 .form-group{margin-bottom:18px;}
-.form-group label{display:block;font-weight:600;font-size:.88rem;color:var(--ink);margin-bottom:6px;}
+.form-group label{display:flex;align-items:center;gap:6px;font-weight:600;font-size:.88rem;color:var(--ink);margin-bottom:6px;}
 .form-group .req{color:var(--accent-pink);}
-.form-group input,.form-group textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font-family:inherit;font-size:.95rem;color:var(--ink);background:var(--white);transition:border-color .2s ease,box-shadow .2s ease;}
-.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--accent-blue);box-shadow:0 0 0 3px var(--accent-blue-light);}
-.form-group textarea{resize:vertical;min-height:80px;}
-.form-group .hint{font-size:.78rem;color:var(--ink-soft);margin-top:5px;}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:11px;font-family:inherit;font-size:.95rem;color:var(--ink);background:var(--white);transition:border-color .2s ease,box-shadow .2s ease;box-sizing:border-box;}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--accent-blue);box-shadow:0 0 0 3px var(--accent-blue-light);}
+.form-group textarea{resize:vertical;min-height:88px;}
+.form-group .hint{font-size:.76rem;color:var(--ink-soft);margin-top:5px;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .age-input-row{display:flex;gap:8px;}
 .age-input-row input{flex:1;min-width:0;}
-.age-input-row select{width:88px;flex-shrink:0;padding:12px 8px;border:1.5px solid var(--line);border-radius:10px;font-family:inherit;font-size:.95rem;color:var(--ink);background:var(--white);}
-.age-input-row select:focus{outline:none;border-color:var(--accent-blue);box-shadow:0 0 0 3px var(--accent-blue-light);}
-.form-group input:invalid.date-error{border-color:var(--err);}
-@media (max-width:520px){.form-row{grid-template-columns:1fr;}}
-.submit-btn{width:100%;justify-content:center;padding:14px 20px;font-size:1rem;margin-top:6px;}
-.submit-btn:disabled{opacity:.65;cursor:not-allowed;}
-.spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,.5);border-top-color:#fff;border-radius:50%;display:inline-block;animation:spin .7s linear infinite;}
-@keyframes spin{to{transform:rotate(360deg);}}
-.form-privacy{font-size:.76rem;color:var(--ink-soft);text-align:center;margin-top:16px;line-height:1.5;}
+.age-input-row select{width:96px;flex-shrink:0;}
+.field-error{font-size:.78rem;color:var(--err);margin-top:6px;display:none;line-height:1.4;}
+.field-error.show{display:block;}
+.input-error{border-color:var(--err) !important;box-shadow:0 0 0 3px rgba(197,48,48,.12) !important;}
+.submit-btn{width:100%;justify-content:center;padding:15px 20px;font-size:1.02rem;margin-top:8px;letter-spacing:.01em;}
+.submit-btn i{font-size:1.1rem;}
 .status-box{display:none;border-radius:12px;padding:16px 18px;margin-bottom:20px;font-size:.9rem;align-items:flex-start;gap:10px;}
 .status-box.show{display:flex;}
 .status-box.success{background:var(--ok-bg);color:var(--ok);border:1px solid #B7E6C9;}
 .status-box.error{background:var(--err-bg);color:var(--err);border:1px solid #F3C6C6;}
-.status-box .icon{font-size:1.2rem;line-height:1;}
-.reassure{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:38px;}
-.reassure-item{background:var(--bg-card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;text-align:center;max-width:200px;}
-.reassure-item .emoji{font-size:1.6rem;display:block;margin-bottom:8px;}
-.reassure-item p{font-size:.82rem;margin:0;}
-footer{padding:36px 0;text-align:center;border-top:1px solid var(--line);background:var(--white);}
+.security-note{display:flex;gap:10px;align-items:flex-start;background:#F0F7FF;border:1px solid #C2D9F0;border-radius:10px;padding:12px 14px;margin-top:18px;font-size:.80rem;color:var(--ink-soft);line-height:1.5;}
+.security-note i{color:var(--accent-blue);margin-top:2px;}
+.form-privacy{font-size:.74rem;color:var(--ink-soft);text-align:center;margin-top:16px;line-height:1.5;}
+/* REASSURANCE */
+.reassure{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px;max-width:680px;margin-left:auto;margin-right:auto;}
+.reassure-item{background:var(--bg-card);border:1px solid var(--line);border-radius:14px;padding:18px 16px;text-align:center;}
+.reassure-item .emoji{width:42px;height:42px;background:var(--accent-blue-light);border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;color:var(--accent-blue);font-size:1.2rem;}
+.reassure-item h4{font-size:.88rem;margin:0 0 6px;}
+.reassure-item p{font-size:.80rem;margin:0;color:var(--ink-soft);line-height:1.45;}
+/* STEPS */
+.steps{max-width:680px;margin:36px auto 0;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 24px;}
+.steps h3{font-size:1rem;text-align:center;margin-bottom:18px;color:var(--ink);}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;position:relative;}
+.steps-grid::before{content:'';position:absolute;top:20px;left:18%;right:18%;height:2px;background:var(--line);z-index:0;}
+.step{position:relative;z-index:1;}
+.step-num{width:40px;height:40px;background:var(--accent-blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:700;font-size:.9rem;border:3px solid var(--white);box-shadow:0 2px 8px rgba(0,96,176,0.2);}
+.step p{font-size:.82rem;color:var(--ink-soft);margin:0;line-height:1.4;}
+.step strong{display:block;color:var(--ink);font-size:.88rem;margin-bottom:4px;}
+footer{padding:36px 0;text-align:center;border-top:1px solid var(--line);background:var(--white);margin-top:44px;}
 footer p{font-size:.82rem;margin:0;color:var(--ink-soft);}
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;}
-.reveal.in{opacity:1;transform:none;}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important;}}
+.spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,.5);border-top-color:#fff;border-radius:50%;display:inline-block;animation:spin .7s linear infinite;}@keyframes spin{to{transform:rotate(360deg);}}
+/* MOBILE */
+@media (max-width:680px){
+  .wrap{padding:0 16px;}
+  .form-card{margin:-32px auto 0;border-radius:16px;max-width:100%;}
+  .form-card-header{padding:20px 18px 16px;}
+  .form-card-body{padding:22px 18px 24px;}
+  .form-row{grid-template-columns:1fr;}
+  .reassure{grid-template-columns:1fr;gap:10px;}
+  .steps-grid{grid-template-columns:1fr;gap:18px;}
+  .steps-grid::before{display:none;}
+  .page-hero{padding:28px 0 48px;}
+  .nav{padding:10px 16px;}
+  .top-official{font-size:.72rem;padding:6px 0;}
+}
+
+/* CONTACTS ALTERNATIFS */
+.contact-alt{max-width:680px;margin:28px auto 0;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 24px;}
+.contact-alt h3{font-size:1.05rem;text-align:center;margin-bottom:18px;color:var(--ink);}
+.contact-alt-grid{display:grid;gap:12px;}
+.contact-alt-item{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:12px;text-decoration:none;transition:all .2s ease;border:1.5px solid var(--line);background:var(--white);}
+.contact-alt-item:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(16,48,96,0.08);border-color:var(--accent-blue-light);}
+.contact-alt-item.phone:hover{border-color:#D94A7A;background:#FFF5F8;}
+.contact-alt-item.whatsapp{border-color:#DCF8C6;background:#F6FFF2;}
+.contact-alt-item.whatsapp:hover{border-color:#25D366;background:#F0FFE8;}
+.contact-alt-item.maps:hover{background:#F0F7FF;}
+.contact-alt-icon{width:46px;height:46px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;}
+.contact-alt-item.phone .contact-alt-icon{background:#FCE4EC;color:var(--accent-pink);}
+.contact-alt-item.whatsapp .contact-alt-icon{background:#25D366;color:white;}
+.contact-alt-item.maps .contact-alt-icon{background:var(--accent-blue-light);color:var(--accent-blue);}
+.contact-alt-text{display:flex;flex-direction:column;flex:1;min-width:0;}
+.contact-alt-text strong{font-size:.92rem;color:var(--ink);margin-bottom:2px;}
+.contact-alt-text span{font-size:.88rem;color:var(--ink);font-weight:600;}
+.contact-alt-text small{font-size:.76rem;color:var(--ink-soft);margin-top:2px;}
+.contact-alt-arrow{color:var(--ink-soft);font-size:.85rem;flex-shrink:0;opacity:.6;}
+.contact-alt-item:hover .contact-alt-arrow{opacity:1;transform:translateX(2px);}
+@media (max-width:680px){.contact-alt{padding:18px 16px;}.contact-alt-item{padding:12px 12px;}.contact-alt-icon{width:40px;height:40px;font-size:1.15rem;}}
+
+
+/* LOGO ROND CABINET */
+.logo-cabinet{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2.5px solid var(--white);box-shadow:0 2px 10px rgba(16,48,96,0.15);background:var(--white);}
+.form-card-header .doc-icon.logo-header{background:white;border:2px solid var(--line);padding:0;overflow:hidden;}
+.form-card-header .doc-icon.logo-header img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
+
+
+
+/* FIX TÉLÉPHONE : LTR uniquement pour les numéros, sans casser l'arabe */
+.phone-number{
+  direction:ltr !important;
+  unicode-bidi:isolate !important;
+  display:inline-block !important;
+  font-variant-ligatures:none;
+}
+
 </style>
 </head>
 <body class="lang-fr">
+<!-- BARRE OFFICIELLE -->
+<div class="top-official">
+  <div class="wrap">
+    <i class="fa-solid fa-shield-check"></i>
+    <span class="fr"><strong>Site Officiel</strong> — Cabinet Médical de Chirurgie Pédiatrique Dr. Ziane Khodja — Agréé Wilaya de Boumerdès</span>
+    <span class="ar"><strong>الموقع الرسمي</strong> — عيادة جراحة الأطفال د. زيان خوجة — معتمدة من ولاية بومرداس</span>
+  </div>
+</div>
 
 <header>
   <div class="nav">
     <a href="index.html" class="brand">
-      <img src="1000040675.jpg" alt="Dr Ziane Khodja Logo">
+      <img src="logo_rond.png" alt="Logo Cabinet Dr Ziane Khodja - Chirurgie Pédiatrique" class="logo-cabinet">
       <div class="brand-text">
-        <span class="fr">Dr. Ziane Khodja</span>
-        <span class="ar">د. زيان خوجة</span>
-        <small class="fr">Chirurgienne pédiatre</small>
-        <small class="ar">جراحة الأطفال</small>
+        <span class="brand-title">Dr. Ziane Khodja</span>
+        <small class="fr">Chirurgienne pédiatre • Ouled Moussa</small>
+        <small class="ar">جراحة الأطفال • أولاد موسى</small>
       </div>
     </a>
     <div class="nav-actions">
-      <button class="lang-toggle" onclick="toggleLang()">
-        <span class="fr">العربية</span>
-        <span class="ar">Français</span>
-      </button>
-      <a class="btn" href="tel:+213558456019">
-        <span class="fr">Appeler</span><span class="ar">اتصل بنا</span>
-      </a>
+      <button class="lang-toggle" onclick="toggleLang()"><i class="fa-solid fa-globe"></i> <span class="fr">العربية</span><span class="ar">Français</span></button>
+      <a href="tel:0558456019" class="btn" style="padding:8px 14px;font-size:.84rem;"><i class="fa-solid fa-phone"></i> <span class="fr phone-number" dir="ltr">0558 45 60 19</span><span class="ar phone-number" dir="ltr">0558 45 60 19</span></a>
     </div>
   </div>
 </header>
 
 <main>
-
-  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="wrap">
-      <div class="breadcrumb">
-        <a href="index.html">Accueil</a> / <span class="fr">Prendre rendez-vous</span><span class="ar">أخذ موعد</span>
-      </div>
-      <h1 class="fr">Prendre rendez-vous</h1>
-      <h1 class="ar">أخذ موعد</h1>
-      <p class="fr">Remplissez ce formulaire simple et nous vous recontacterons rapidement pour confirmer la date et l'heure de la consultation de votre enfant.</p>
-      <p class="ar">املأوا هذه الاستمارة البسيطة وسنتصل بكم في أقرب وقت لتأكيد تاريخ ووقت استشارة طفلكم.</p>
+      <div class="breadcrumb"><a href="index.html">Accueil</a> / <span class="fr">Rendez-vous officiel</span><span class="ar">موعد رسمي</span></div>
+      <div class="official-badge"><i class="fa-solid fa-circle-check"></i> <span class="fr">Formulaire officiel et sécurisé du cabinet</span><span class="ar">استمارة رسمية وآمنة للعيادة</span></div>
+      <h1 class="fr">Demande de rendez-vous officielle</h1>
+      <h1 class="ar">طلب موعد رسمي</h1>
+      <p class="lead fr">Ce formulaire est le canal officiel du secrétariat du <strong>Dr. Ziane Khodja Djamila</strong>. Vos informations sont transmises directement et de manière confidentielle au cabinet d'Ouled Moussa.</p>
+      
       <div class="trust-row">
-        <span class="trust-item">✅ <span class="fr">Réponse rapide</span><span class="ar">رد سريع</span></span>
-        <span class="trust-item">🔒 <span class="fr">Informations confidentielles</span><span class="ar">معلومات سرية</span></span>
-        <span class="trust-item">👩‍⚕️ <span class="fr">15 ans d'expérience</span><span class="ar">15 سنة خبرة</span></span>
+        <div class="trust-item"><i class="fa-solid fa-award"></i> <span class="fr">Cabinet agréé</span><span class="ar">عيادة معتمدة</span></div>
+        <div class="trust-item"><i class="fa-solid fa-lock"></i> <span class="fr">Données protégées</span><span class="ar">بيانات محمية</span></div>
+        <div class="trust-item"><i class="fa-solid fa-clock"></i> <span class="fr">Réponse sous 24h</span><span class="ar">رد خلال 24 ساعة</span></div>
+        <div class="trust-item"><i class="fa-solid fa-headset"></i> <span class="fr">Secrétariat direct</span><span class="ar">سكرتارية مباشرة</span></div>
       </div>
     </div>
   </section>
 
-  <!-- FORMULAIRE -->
-  <section class="reveal">
+  <section class="form-section">
     <div class="wrap">
       <div class="form-card">
-        <h2 class="fr">Formulaire de rendez-vous</h2>
-        <h2 class="ar">استمارة أخذ الموعد</h2>
-        <p class="sub fr">Tous les champs marqués d'un <span class="req">*</span> sont obligatoires.</p>
-        <p class="sub ar">جميع الحقول المُعلَّمة بـ <span class="req">*</span> إلزامية.</p>
-
-        <div id="statusSuccess" class="status-box success">
-          <span class="icon">✅</span>
+        <div class="form-card-header">
+          <div class="doc-icon logo-header"><img src="logo_rond.png" alt="Logo"></div>
           <div>
-            <span class="fr">Votre demande a bien été envoyée ! Nous vous contacterons très prochainement au numéro fourni pour confirmer le rendez-vous.</span>
-            <span class="ar">تم إرسال طلبكم بنجاح! سنتصل بكم قريبًا على الرقم المُقدَّم لتأكيد الموعد.</span>
+            <h2 class="fr">Formulaire de rendez-vous - Dr. Ziane Khodja Djamila</h2>
+            <h2 class="ar">استمارة موعد - د. زيان خوجة جميلة</h2>
+            <p class="fr">Chirurgienne pédiatre • 15 ans d'expérience hospitalière • Ouled Moussa, Boumerdès</p>
+            <p class="ar">جراحة الأطفال • 15 سنة خبرة استشفائية • أولاد موسى، بومرداس</p>
           </div>
         </div>
-        <div id="statusError" class="status-box error">
-          <span class="icon">⚠️</span>
-          <div>
-            <span class="fr">Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous contacter directement par téléphone ou WhatsApp.</span>
-            <span class="ar">حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى أو الاتصال بنا مباشرة عبر الهاتف أو واتساب.</span>
-          </div>
-        </div>
+        <div class="form-card-body">
+          <div class="status-box success" id="statusSuccess"><div class="icon"><i class="fa-solid fa-circle-check"></i></div><div><strong class="fr">Demande envoyée avec succès !</strong><strong class="ar">تم إرسال الطلب بنجاح !</strong><br><span class="fr">Le secrétariat du Dr. Ziane Khodja vous appellera très prochainement au numéro que vous avez indiqué.</span><span class="ar">ستتصل بكم سكرتارية الدكتورة زيان خوجة قريباً على الرقم الذي أدخلتموه.</span></div></div>
+          <div class="status-box error" id="statusError"><div class="icon"><i class="fa-solid fa-triangle-exclamation"></i></div><div><strong class="fr">Veuillez corriger les champs indiqués.</strong><strong class="ar">يرجى تصحيح الحقول المشار إليها.</strong></div></div>
 
-        <form id="rdvForm" novalidate>
-          <div class="form-group">
-            <label for="childName"><span class="fr">Nom et prénom de l'enfant <span class="req">*</span></span><span class="ar">اسم ولقب الطفل <span class="req">*</span></span></label>
-            <input type="text" id="childName" name="childName" required autocomplete="off">
-          </div>
-
-          <div class="form-row">
+          <form id="rdvForm" novalidate>
             <div class="form-group">
-              <label for="childAge"><span class="fr">Âge de l'enfant <span class="req">*</span></span><span class="ar">عمر الطفل <span class="req">*</span></span></label>
-              <div class="age-input-row">
-                <input type="number" id="childAge" name="childAge" min="0" max="216" step="1" required autocomplete="off">
-                <select id="childAgeUnit" name="childAgeUnit">
-                  <option value="ans" selected>ans</option>
-                  <option value="mois">mois</option>
-                </select>
+              <label for="childName"><i class="fa-solid fa-child" style="color:var(--accent-blue);"></i> <span class="fr">Nom et prénom de l'enfant <span class="req">*</span></span><span class="ar">اسم ولقب الطفل <span class="req">*</span></span></label>
+              <input type="text" id="childName" name="childName" required autocomplete="name" placeholder="Ex: Ahmed Benali">
+              <div class="field-error" id="error-childName"><span class="fr">Veuillez saisir le nom et prénom de l'enfant.</span><span class="ar">يرجى إدخال اسم ولقب الطفل.</span></div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="childAge"><i class="fa-solid fa-cake-candles" style="color:var(--accent-blue);"></i> <span class="fr">Âge de l'enfant <span class="req">*</span></span><span class="ar">عمر الطفل <span class="req">*</span></span></label>
+                <div class="age-input-row">
+                  <input type="number" id="childAge" name="childAge" min="0" max="216" step="1" required autocomplete="off" placeholder="Ex: 3">
+                  <select id="childAgeUnit" name="childAgeUnit"><option value="ans" selected>ans</option><option value="mois">mois</option></select>
+                </div>
+                <div class="field-error" id="error-childAge"><span class="fr">Veuillez saisir l'âge de l'enfant.</span><span class="ar">يرجى إدخال عمر الطفل.</span></div>
+              </div>
+              <div class="form-group">
+                <label for="parentPhone"><i class="fa-solid fa-phone" style="color:var(--accent-pink);"></i> <span class="fr">Téléphone du parent <span class="req">*</span></span><span class="ar">هاتف الولي <span class="req">*</span></span></label>
+                <input type="tel" id="parentPhone" name="parentPhone" placeholder="0558 45 60 19" required autocomplete="tel" inputmode="numeric">
+                <div class="field-error" id="error-parentPhone"><span class="fr">Veuillez saisir le numéro de téléphone du parent.</span><span class="ar">يرجى إدخال رقم هاتف الولي.</span></div>
+                <div class="hint fr">Numéro utilisé uniquement par le secrétariat pour confirmer le RDV.</div>
+                <div class="hint ar">الرقم يستخدم فقط من طرف السكرتارية لتأكيد الموعد.</div>
               </div>
             </div>
 
-            <script>
-            // Les <option> ne peuvent pas contenir de <span class="fr/ar">, donc on
-            // traduit ce sélecteur en JS, synchronisé avec la langue active du site.
-            function syncAgeUnitOptions(){
-              var sel = document.getElementById('childAgeUnit');
-              if(!sel) return;
-              var isAr = document.body.classList.contains('lang-ar');
-              sel.options[0].text = isAr ? 'سنة' : 'ans';
-              sel.options[1].text = isAr ? 'شهر' : 'mois';
-            }
-            syncAgeUnitOptions();
-            </script>
             <div class="form-group">
-              <label for="parentPhone"><span class="fr">Téléphone du parent <span class="req">*</span></span><span class="ar">هاتف الولي <span class="req">*</span></span></label>
-              <input type="tel" id="parentPhone" name="parentPhone" placeholder="0558 45 60 19" required autocomplete="off">
+              <label for="city"><i class="fa-solid fa-location-dot" style="color:var(--ink-soft);"></i> <span class="fr">Votre ville <span style="font-weight:400;color:var(--ink-soft);">(optionnel)</span></span><span class="ar">مدينتكم <span style="font-weight:400;color:var(--ink-soft);">(اختياري)</span></span></label>
+              <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="Ex: Boumerdès, Alger...">
             </div>
-          </div>
 
-          <div class="form-group">
-            <label for="city"><span class="fr">Votre ville <span style="font-weight:400;color:var(--ink-soft);">(optionnel)</span></span><span class="ar">مدينتكم <span style="font-weight:400;color:var(--ink-soft);">(اختياري)</span></span></label>
-            <input type="text" id="city" name="city" autocomplete="off">
-          </div>
+            <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;"><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
 
-          <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;">
-            <label for="website">Website</label>
-            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
-          </div>
-
-          <div class="form-group">
-            <label for="reason"><span class="fr">Motif de la consultation <span style="font-weight:400;color:var(--ink-soft);">(optionnel)</span></span><span class="ar">سبب الاستشارة <span style="font-weight:400;color:var(--ink-soft);">(اختياري)</span></span></label>
-            <textarea id="reason" name="reason" placeholder="" ></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="desiredDate"><span class="fr">Date de rendez-vous souhaitée <span class="req">*</span></span><span class="ar">التاريخ المرغوب للموعد <span class="req">*</span></span></label>
-            <input type="date" id="desiredDate" name="desiredDate" required>
-            <div class="hint fr">Cette date est indicative — nous vous confirmerons le créneau exact par téléphone.</div>
-            <div class="hint ar">هذا التاريخ إرشادي — سنؤكد لكم الموعد الدقيق عبر الهاتف.</div>
-            <div class="hint" id="dateErrorMsg" style="display:none;color:var(--err);">
-              <span class="fr">Veuillez choisir une date à partir d'aujourd'hui — une date antérieure n'est pas acceptée.</span>
-              <span class="ar">يرجى اختيار تاريخ ابتداءً من اليوم — لا يمكن اختيار تاريخ سابق.</span>
+            <div class="form-group">
+              <label for="reason"><i class="fa-solid fa-file-medical" style="color:var(--ink-soft);"></i> <span class="fr">Motif de la consultation <span style="font-weight:400;color:var(--ink-soft);">(optionnel)</span></span><span class="ar">سبب الاستشارة <span style="font-weight:400;color:var(--ink-soft);">(اختياري)</span></span></label>
+              <textarea id="reason" name="reason" placeholder="Ex: hernie, circoncision, douleur abdominale..."></textarea>
             </div>
-          </div>
 
-          <button type="submit" class="btn btn-pink submit-btn" id="submitBtn">
-            <span class="fr">Envoyer la demande</span>
-            <span class="ar">إرسال الطلب</span>
-          </button>
+            <div class="form-group">
+              <label for="desiredDate"><i class="fa-solid fa-calendar-check" style="color:var(--accent-blue);"></i> <span class="fr">Date de rendez-vous souhaitée <span class="req">*</span></span><span class="ar">التاريخ المرغوب للموعد <span class="req">*</span></span></label>
+              <input type="date" id="desiredDate" name="desiredDate" required>
+              <div class="field-error" id="error-desiredDate" style="display:none;color:var(--err);"><span class="fr">Veuillez choisir une date de rendez-vous.</span><span class="ar">يرجى اختيار تاريخ الموعد.</span></div>
+              <div class="hint" id="dateErrorMsg" style="display:none;color:var(--err);"><span class="fr">Veuillez choisir une date à partir d'aujourd'hui.</span><span class="ar">يرجى اختيار تاريخ ابتداءً من اليوم.</span></div>
+              
+            </div>
 
-          <div class="form-privacy">
-            <span class="fr">🔒 Vos informations sont utilisées uniquement pour la prise de rendez-vous et ne sont jamais partagées avec des tiers.</span>
-            <span class="ar">🔒 تُستخدم معلوماتكم فقط لأخذ الموعد ولا تتم مشاركتها أبدًا مع أطراف أخرى.</span>
-          </div>
-        </form>
+            <button type="submit" class="btn btn-pink submit-btn" id="submitBtn"><i class="fa-solid fa-paper-plane"></i> <span class="fr">Envoyer ma demande officielle</span><span class="ar">إرسال طلبي الرسمي</span></button>
+          </form>
+        </div>
       </div>
 
-      <div class="reassure">
-        <div class="reassure-item">
-          <span class="emoji">📞</span>
-          <p class="fr">Besoin d'une réponse immédiate ? Appelez-nous directement.</p>
-          <p class="ar">تحتاجون لرد فوري؟ اتصلوا بنا مباشرة.</p>
-        </div>
-        <div class="reassure-item">
-          <span class="emoji">💬</span>
-          <p class="fr">Vous pouvez aussi nous écrire sur WhatsApp.</p>
-          <p class="ar">يمكنكم أيضًا مراسلتنا عبر واتساب.</p>
-        </div>
-        <div class="reassure-item">
-          <span class="emoji">📍</span>
-          <p class="fr">Ouled Moussa, Boumerdès — en face du Supermarché El Baraka.</p>
-          <p class="ar">أولاد موسى، بومرداس — أمام سوبرماركت البركة.</p>
+      <!-- CONTACTS ALTERNATIFS - AJOUT DEMANDE -->
+      <div class="contact-alt">
+        <h3 class="fr">Besoin d'une réponse immédiate ?</h3>
+        <h3 class="ar">هل تحتاجون رداً فورياً ؟</h3>
+        
+        <div class="contact-alt-grid">
+          <a href="tel:+213558456019" class="contact-alt-item phone">
+            <div class="contact-alt-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="contact-alt-text">
+              <strong class="fr">Appelez-nous directement</strong>
+              <strong class="ar">اتصلوا بنا مباشرة</strong>
+              <span class="phone-number" dir="ltr">0558 45 60 19</span>
+              <small class="fr">Appel direct au secrétariat</small>
+              <small class="ar">اتصال مباشر بالسكرتارية</small>
+            </div>
+            <div class="contact-alt-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://wa.me/213558456019" target="_blank" rel="noopener" class="contact-alt-item whatsapp">
+            <div class="contact-alt-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="contact-alt-text">
+              <strong class="fr">Écrivez-nous sur WhatsApp</strong>
+              <strong class="ar">راسلونا على واتساب</strong>
+              <span class="phone-number" dir="ltr">0558 45 60 19</span>
+              <small class="fr">Réponse rapide sur WhatsApp</small>
+              <small class="ar">رد سريع على واتساب</small>
+            </div>
+            <div class="contact-alt-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="https://maps.app.goo.gl/JambJMrum53vgVHj6" target="_blank" rel="noopener" class="contact-alt-item maps">
+            <div class="contact-alt-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-alt-text">
+              <strong class="fr">Nous trouver</strong>
+              <strong class="ar">موقعنا</strong>
+              <span class="fr">Ouled Moussa, Boumerdès</span>
+              <span class="ar">أولاد موسى، بومرداس</span>
+              <small class="fr">En face du Supermarché El Baraka</small>
+              <small class="ar">مقابل سوبر ماركت البركة</small>
+            </div>
+            <div class="contact-alt-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </a>
         </div>
       </div>
+
     </div>
   </section>
-
 </main>
 
 <footer>
-  <p class="fr">© Cabinet Médical de Chirurgie Pédiatrique — Dr Ziane Khodja Djamila · <a href="index.html">Retour à l'accueil</a></p>
-  <p class="ar">© عيادة جراحة الأطفال — د. زيان خوجة جميلة · <a href="index.html">العودة إلى الصفحة الرئيسية</a></p>
+  <div class="wrap">
+    <p class="fr"><strong>Cabinet Médical de Chirurgie Pédiatrique — Dr. Ziane Khodja Djamila</strong> • Ouled Moussa (35011), Wilaya de Boumerdès • Agréé • <i class="fa-solid fa-phone"></i> <span class="phone-number" dir="ltr">0558 45 60 19</span> • Site officiel</p>
+    <p class="ar"><strong>عيادة جراحة الأطفال — د. زيان خوجة جميلة</strong> • أولاد موسى (35011)، ولاية بومرداس • معتمدة • <i class="fa-solid fa-phone"></i> <span class="phone-number" dir="ltr">0558 45 60 19</span> • الموقع الرسمي</p>
+    <p style="margin-top:10px;font-size:.75rem;opacity:.7;">© 2026 - Tous droits réservés - Données médicales confidentielles</p>
+  </div>
 </footer>
 
 <script>
@@ -290,146 +333,44 @@ function toggleLang(){
   localStorage.setItem('zk_lang_choice', isAr ? 'fr' : 'ar');
   if(isAr){body.classList.remove('lang-ar');body.classList.add('lang-fr');document.documentElement.setAttribute('lang','fr');document.documentElement.setAttribute('dir','ltr');}
   else{body.classList.remove('lang-fr');body.classList.add('lang-ar');document.documentElement.setAttribute('lang','ar');document.documentElement.setAttribute('dir','rtl');}
-  syncAgeUnitOptions();
+  const sel=document.getElementById('childAgeUnit'); if(sel){ syncAgeUnitOptions(); }
 }
-const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');}});},{threshold:0.12});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-// --- FIX DATE : timezone Alger + saisie clavier numérique ---
-function getTodayAlgiers(){
-  // Format YYYY-MM-DD dans le fuseau Afrique/Alger
-  return new Date().toLocaleDateString('en-CA', { timeZone: 'Africa/Algiers' });
+function syncAgeUnitOptions(){
+  var sel=document.getElementById('childAgeUnit'); if(!sel) return; var isAr=document.body.classList.contains('lang-ar'); sel.options[0].text=isAr?'سنة':'ans'; sel.options[1].text=isAr?'شهر':'mois';
 }
-const dateInput = document.getElementById('desiredDate');
-const dateErrorMsg = document.getElementById('dateErrorMsg');
-let today = getTodayAlgiers();
-dateInput.min = today;
+(function(){ const saved=localStorage.getItem('zk_lang_choice'); if(saved==='ar'){ document.body.classList.remove('lang-fr'); document.body.classList.add('lang-ar'); document.documentElement.setAttribute('lang','ar'); document.documentElement.setAttribute('dir','rtl'); }})();
 
-// Met à jour le min chaque jour si page reste ouverte
-setInterval(()=>{ today = getTodayAlgiers(); dateInput.min = today; }, 60*60*1000);
+// --- DATE FIX ---
+function getTodayAlgiers(){return new Date().toLocaleDateString('en-CA',{timeZone:'Africa/Algiers'});}
+const dateInput=document.getElementById('desiredDate'); const dateErrorMsg=document.getElementById('dateErrorMsg'); let today=getTodayAlgiers(); dateInput.min=today;
+setInterval(()=>{ today=getTodayAlgiers(); dateInput.min=today; }, 60*60*1000);
+function isPastDate(value){ if(!value) return true; if(value.length!==10) return false; return value < getTodayAlgiers(); }
+function validateDateField(showError){ const val=dateInput.value; if(!val){ if(showError) dateErrorMsg.style.display='none'; return false; } if(val.length!==10){ dateErrorMsg.style.display='none'; return false; } if(isPastDate(val)){ if(showError){ dateErrorMsg.style.display='block'; dateInput.classList.add('input-error'); } return true; } else { dateErrorMsg.style.display='none'; dateInput.classList.remove('input-error'); return false; } }
+dateInput.addEventListener('input', ()=>{ validateDateField(false); });
+dateInput.addEventListener('change', ()=>{ validateDateField(true); });
+dateInput.addEventListener('blur', ()=>{ validateDateField(true); });
 
-function isPastDate(value){
-  if(!value) return true;
-  // Autorise la saisie en cours : ne valide que si date complète YYYY-MM-DD
-  if(value.length !== 10) return false;
-  // Comparaison en string YYYY-MM-DD fonctionne si format complet
-  const currentToday = getTodayAlgiers();
-  return value < currentToday;
-}
+// --- VALIDATION ---
+function clearAllErrors(){ document.querySelectorAll('.field-error').forEach(el=>{el.classList.remove('show'); el.style.display='none';}); dateErrorMsg.style.display='none'; document.querySelectorAll('.input-error').forEach(el=>el.classList.remove('input-error')); document.getElementById('statusError').classList.remove('show'); }
+function showError(inputId, errorId){ const input=document.getElementById(inputId); const err=document.getElementById(errorId); if(input) input.classList.add('input-error'); if(err){ err.classList.add('show'); err.style.display='block'; } }
+function validatePhone(phone){ if(!phone) return false; const cleaned=phone.replace(/[^0-9]/g,''); return cleaned.length>=9 && cleaned.length<=13; }
 
-function validateDateField(showError){
-  const val = dateInput.value;
-  if(!val){
-    if(showError) dateErrorMsg.style.display = 'none';
-    return false;
-  }
-  if(val.length !== 10){
-    // Saisie en cours, on ne bloque pas
-    dateErrorMsg.style.display = 'none';
-    return false;
-  }
-  if(isPastDate(val)){
-    if(showError){
-      dateErrorMsg.style.display = 'block';
-      dateInput.classList.add('date-error');
-    }
-    return true;
-  } else {
-    dateErrorMsg.style.display = 'none';
-    dateInput.classList.remove('date-error');
-    return false;
-  }
-}
+['childName','childAge','parentPhone','desiredDate'].forEach(id=>{ const el=document.getElementById(id); if(!el) return; el.addEventListener('input', ()=>{ el.classList.remove('input-error'); const err=document.getElementById('error-'+id); if(err){ err.classList.remove('show'); err.style.display='none'; } if(id==='desiredDate') dateErrorMsg.style.display='none'; if(id==='parentPhone'){ const def=document.getElementById('error-parentPhone'); if(def) def.innerHTML='<span class="fr">Veuillez saisir le numéro de téléphone du parent.</span><span class="ar">يرجى إدخال رقم هاتف الولي.</span>'; } }); });
 
-dateInput.addEventListener('input', function(){
-  // Pendant la frappe au pavé numérique, on n'efface pas, on cache juste l'erreur si incomplet
-  validateDateField(false);
-});
-
-dateInput.addEventListener('change', function(){
-  // Quand la date est commitée (blur ou picker)
-  if(validateDateField(true) && dateInput.value.length===10){
-    // Ne vide plus automatiquement si c'est juste une faute de frappe, laisse l'utilisateur corriger
-    // On vide seulement si vraiment très ancien (>1 an) ou on laisse le message
-    if(dateInput.value < getTodayAlgiers()){
-      // Option douce : on garde la valeur mais on montre l'erreur, on ne vide pas
-      // dateInput.value = '';
-    }
-  }
-});
-
-dateInput.addEventListener('blur', function(){
-  validateDateField(true);
-});
-
-// Soumission du formulaire
-const form = document.getElementById('rdvForm');
-const submitBtn = document.getElementById('submitBtn');
-const statusSuccess = document.getElementById('statusSuccess');
-const statusError = document.getElementById('statusError');
-
+const form=document.getElementById('rdvForm'); const submitBtn=document.getElementById('submitBtn'); const statusSuccess=document.getElementById('statusSuccess'); const statusError=document.getElementById('statusError');
 form.addEventListener('submit', async function(e){
-  e.preventDefault();
-  statusSuccess.classList.remove('show');
-  statusError.classList.remove('show');
-  dateErrorMsg.style.display = 'none';
-
-  const payload = {
-    childName: document.getElementById('childName').value.trim(),
-    childAge: document.getElementById('childAge').value.trim(),
-    childAgeUnit: document.getElementById('childAgeUnit').value,
-    parentPhone: document.getElementById('parentPhone').value.trim(),
-    city: document.getElementById('city').value.trim(),
-    reason: document.getElementById('reason').value.trim(),
-    desiredDate: document.getElementById('desiredDate').value,
-    website: document.getElementById('website').value,
-  };
-
-  if(!payload.desiredDate || payload.desiredDate.length!==10 || isPastDate(payload.desiredDate)){
-    dateErrorMsg.style.display = 'block';
-    dateInput.focus();
-    dateInput.scrollIntoView({behavior:'smooth', block:'center'});
-    return;
-  }
-
-  if(!payload.childName || !payload.childAge || !payload.parentPhone || !payload.desiredDate){
-    statusError.classList.add('show');
-    statusError.scrollIntoView({behavior:'smooth', block:'center'});
-    return;
-  }
-
-  const originalContent = submitBtn.innerHTML;
-  submitBtn.disabled = true;
-  submitBtn.innerHTML = '<span class="spinner"></span> <span class="fr">Envoi en cours...</span><span class="ar">جاري الإرسال...</span>';
-
-  try{
-    const res = await fetch('/api/send-appointment', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-
-    if(res.ok){
-      statusSuccess.classList.add('show');
-      statusSuccess.scrollIntoView({behavior:'smooth', block:'center'});
-      form.reset();
-      today = getTodayAlgiers();
-      dateInput.min = today;
-      dateErrorMsg.style.display='none';
-    } else {
-      throw new Error('Erreur serveur');
-    }
-  } catch(err){
-    statusError.classList.add('show');
-    statusError.scrollIntoView({behavior:'smooth', block:'center'});
-  } finally {
-    submitBtn.disabled = false;
-    submitBtn.innerHTML = originalContent;
-  }
+  e.preventDefault(); clearAllErrors(); statusSuccess.classList.remove('show');
+  const payload={ childName:document.getElementById('childName').value.trim(), childAge:document.getElementById('childAge').value.trim(), childAgeUnit:document.getElementById('childAgeUnit').value, parentPhone:document.getElementById('parentPhone').value.trim(), city:document.getElementById('city').value.trim(), reason:document.getElementById('reason').value.trim(), desiredDate:document.getElementById('desiredDate').value, website:document.getElementById('website').value };
+  let firstInvalid=null; let hasError=false;
+  if(!payload.childName){ showError('childName','error-childName'); if(!firstInvalid) firstInvalid=document.getElementById('childName'); hasError=true; }
+  if(!payload.childAge){ showError('childAge','error-childAge'); if(!firstInvalid) firstInvalid=document.getElementById('childAge'); hasError=true; } else { const ageNum=parseInt(payload.childAge,10); if(isNaN(ageNum)||ageNum<0||ageNum>216){ showError('childAge','error-childAge'); if(!firstInvalid) firstInvalid=document.getElementById('childAge'); hasError=true; } }
+  if(!payload.parentPhone){ showError('parentPhone','error-parentPhone'); if(!firstInvalid) firstInvalid=document.getElementById('parentPhone'); hasError=true; } else if(!validatePhone(payload.parentPhone)){ const errEl=document.getElementById('error-parentPhone'); errEl.innerHTML='<span class="fr">Numéro invalide. Exemple : 0558 45 60 19</span><span class="ar">رقم غير صالح. مثال : 0558 45 60 19</span>'; showError('parentPhone','error-parentPhone'); if(!firstInvalid) firstInvalid=document.getElementById('parentPhone'); hasError=true; }
+  if(!payload.desiredDate){ const err=document.getElementById('error-desiredDate'); err.classList.add('show'); err.style.display='block'; document.getElementById('desiredDate').classList.add('input-error'); if(!firstInvalid) firstInvalid=document.getElementById('desiredDate'); hasError=true; } else if(payload.desiredDate.length!==10 || isPastDate(payload.desiredDate)){ dateErrorMsg.style.display='block'; document.getElementById('desiredDate').classList.add('input-error'); if(!firstInvalid) firstInvalid=document.getElementById('desiredDate'); hasError=true; }
+  if(hasError){ if(firstInvalid){ firstInvalid.focus(); firstInvalid.scrollIntoView({behavior:'smooth', block:'center'}); } return; }
+  const originalContent=submitBtn.innerHTML; submitBtn.disabled=true; submitBtn.innerHTML='<span class="spinner"></span> <span class="fr">Envoi sécurisé...</span><span class="ar">جاري الإرسال الآمن...</span>';
+  try{ const res=await fetch('/api/send-appointment',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}); if(res.ok){ statusSuccess.classList.add('show'); statusSuccess.scrollIntoView({behavior:'smooth', block:'center'}); form.reset(); today=getTodayAlgiers(); dateInput.min=today; } else { throw new Error('Erreur serveur'); } }catch(err){ statusError.classList.add('show'); statusError.scrollIntoView({behavior:'smooth', block:'center'}); }finally{ submitBtn.disabled=false; submitBtn.innerHTML=originalContent; }
 });
+syncAgeUnitOptions();
 </script>
-<script src="js/cookies.js"></script>
-<script src="js/lang-detect.js"></script>
-<script>syncAgeUnitOptions();</script>
 </body>
 </html>
